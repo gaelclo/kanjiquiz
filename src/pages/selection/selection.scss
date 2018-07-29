@@ -1,0 +1,26 @@
+page-selection {
+    ion-card {
+        height: 30%;
+        text-align: center;
+        background-color: #d0d1f7 !important;
+    }
+
+    ion-card-content {
+        height: 100%;
+    }
+
+    .centered-parent {
+        position: relative ;
+        height: 100%;
+        text-align: center;
+    }
+
+    .centered {
+        margin: 0;
+        position: absolute;               
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        font-size: 4vh;
+    }
+}

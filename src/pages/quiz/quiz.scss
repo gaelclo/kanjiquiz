@@ -1,0 +1,76 @@
+page-quiz {
+    .yomi {
+        font-style: italic;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+    }
+    .counter {
+        text-align: right;
+        display: block;
+        padding: 2%;
+    }
+    .aGood, .aBad {
+        margin-left: 5vh;
+        padding-left: 4vh;
+        margin-right: 5vh;
+        padding-right: 4vh;
+        height: 2.5vh;
+        padding-top: 0.1vh;
+        padding-bottom: 0.1vh;
+    }
+    .aGood {
+        background-color: #8bf38b;
+        color: green;
+        border-radius: 10px;
+    }
+    .aBad {
+        background-color: #fdb0b1;
+        color: #D04E50;
+        border-radius: 10px;
+    }
+    .kanji {
+        text-align: center;
+        font-size: 100px;
+    }
+    .green {
+        background-color: #e6ffe6;
+    }
+    .green .label {
+        color: green !important;
+    }
+    .red {
+        background-color: #ffcfd7;
+    }
+    .red .label {
+        color: #D04E50 !important;
+    }
+    .item-radio {
+        padding-left: 0;
+        border-radius: 10px;
+    }
+    .item-radio .label{
+        padding-left: 10px;
+    }
+    .item-radio {
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .item-block:first-child {
+        border-top: 0 !important;
+    }
+    .item-block:last-child {
+        border-bottom: 0 !important;
+    }
+    .label {
+        color: black !important;
+    }
+    .radio-inner {
+        border-color: black !important;
+    }
+    .radio-checked .radio-inner {
+        display: none;
+    }
+    * {
+        opacity: 1 !important;
+    }
+}

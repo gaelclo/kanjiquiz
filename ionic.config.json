@@ -1,0 +1,7 @@
+{
+  "name": "kanjiquiz",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

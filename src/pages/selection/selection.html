@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'selection.title' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card (click)="selectKanji()">
+      <ion-card-content>
+        <div class="centered-parent"><div class="centered">{{ 'selection.kanjis' | translate }}</div></div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card style="display: none;">
+      <ion-card-content>{{ 'selection.words' | translate }}</ion-card-content>
+    </ion-card>
+</ion-content>

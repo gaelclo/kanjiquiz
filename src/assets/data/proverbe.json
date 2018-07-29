@@ -1,0 +1,28 @@
+{
+    "proverbs": [
+    {
+        "id":1,
+        "content": "猿も木から落ちる",
+        "furigana": "さるもきからおちる",
+        "translated":"Even monkey fall from tree."
+    },       
+    {
+        "id":2,
+        "content": "堪忍は一生の宝",
+        "furigana": "かんにんはいっしょうのたから",
+        "translated":"Patience is a lifetime treasure"        
+    },
+    {
+        "id":3,
+        "content": "英雄会い知る",
+        "furigana": "えいゆうあいしる",
+        "translated":"Heroes meet each other." 
+    },
+    {
+        "id":4,
+        "content": "井の中の蛙大海を知らず",
+        "furigana": "いのなかのかえるたいかいをしらず",
+        "translated":"A frog in a well cannot conceive of the ocean."        
+    }
+    ]
+}

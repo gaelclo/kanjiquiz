@@ -1,0 +1,11 @@
+{
+    "home": {
+        "title": "Kanji Quiz",
+        "start": "Start"
+    },
+    "selection": {
+        "title": "Mode",
+        "kanjis": "Kanjis",
+        "words": "words"
+    }
+}
