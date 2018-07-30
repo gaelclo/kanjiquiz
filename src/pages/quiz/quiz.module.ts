@@ -4,7 +4,6 @@ import { QuizPage } from './quiz';
 
 @NgModule({
   declarations: [
-    QuizPage,
   ],
   imports: [
     IonicPageModule.forChild(QuizPage),

@@ -4,7 +4,6 @@ import { ResumePage } from './resume';
 
 @NgModule({
   declarations: [
-    ResumePage,
   ],
   imports: [
     IonicPageModule.forChild(ResumePage),
