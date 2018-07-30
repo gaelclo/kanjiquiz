@@ -5,9 +5,8 @@ page-quiz {
         margin-bottom: 3vh;
     }
     .counter {
-        text-align: right;
-        display: block;
-        padding: 2%;
+        position: fixed;
+        right: 2vh;
     }
     .aGood, .aBad {
         margin-left: 5vh;

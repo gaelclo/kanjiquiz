@@ -1,14 +1,14 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>Quiz</ion-title>
   </ion-navbar>
-
-  <span class="counter">{{current}}/{{total}}</span>
 </ion-header>
 
 
 <ion-content padding *ngIf="selectedKanji && optionKanjis">
+
+  <div class="counter">{{current}}/{{total}}</div>
+
   <ion-grid>
     <ion-row>
       <ion-col col12 class="kanji">{{selectedKanji.kanji}}</ion-col>
@@ -20,9 +20,7 @@
                 <ion-col col-6>
                   Kunyomi:
                 </ion-col>
-                <ion-col col-6>
-                  {{selectedKanji.kunyomi}}
-                </ion-col>
+                <ion-col col-6>{{format(selectedKanji.kunyomi)}}</ion-col>
             </ion-row>
           </ion-grid>
         </ion-col>
@@ -32,9 +30,7 @@
                 <ion-col col-6>
                   Onyomi:
                 </ion-col>
-                <ion-col col-6>
-                  {{selectedKanji.onyomi}}
-                </ion-col>
+                <ion-col col-6>{{format(selectedKanji.onyomi)}}</ion-col>
               </ion-row>
             </ion-grid>
           </ion-col>
@@ -43,7 +39,7 @@
       <ion-col col12>
         <ion-list #answers radio-group>
           <ion-item *ngFor="let k of optionKanjis" col12>
-            <ion-label>{{k.meaning}}</ion-label>
+            <ion-label>{{format(k.meaning)}}</ion-label>
             <ion-radio [value]="k.id" (click)="validate(k.id)" [disabled]="next" #answer></ion-radio>
           </ion-item>
         </ion-list>

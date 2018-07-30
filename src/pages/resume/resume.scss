@@ -22,12 +22,9 @@ page-resume {
     }
 
     .cell {
-        margin-left: 5vh;
         padding-left: 4vh;
         padding-right: 4vh;
         height: 2.5vh;
-        padding-top: 0.1vh;
-        padding-bottom: 0.1vh;
         border-radius: 20px;
     }
 
@@ -40,6 +37,7 @@ page-resume {
     .result {
         margin-top: 5vh;
         font-size: 3vh;
+        text-align: center;
     }
 
     .restart {

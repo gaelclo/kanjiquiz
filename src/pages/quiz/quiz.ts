@@ -101,6 +101,11 @@ export class QuizPage {
     }
   }
 
+  format(str: string): string {
+    if(!str) return;
+    return str.split(',').join(', ');
+  }
+
   private randomInt(max, forbidden1?, forbidden2?) {
     let value = -1;
     do {
