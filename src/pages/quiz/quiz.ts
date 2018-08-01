@@ -69,9 +69,11 @@ export class QuizPage {
     let iKanji1 = this.randomInt(size);
     let iKanji2 = this.randomInt(size, iKanji1);
     let iKanji3 = this.randomInt(size, iKanji1, iKanji2);
+    let iKanji4 = this.randomInt(size, iKanji1, iKanji2, iKanji3);
+
 
     this.selectedKanji = this.kanjis[iKanji1];
-    this.optionKanjis = [this.kanjis[iKanji1], this.kanjis[iKanji2], this.kanjis[iKanji3]];
+    this.optionKanjis = [this.kanjis[iKanji1], this.kanjis[iKanji2], this.kanjis[iKanji3], this.kanjis[iKanji4]];
     console.log('A>',this.optionKanjis);
     this.optionKanjis = this.shuffle(this.optionKanjis);
     console.log('B>',this.optionKanjis);
@@ -106,12 +108,12 @@ export class QuizPage {
     return str.split(',').join(', ');
   }
 
-  private randomInt(max, forbidden1?, forbidden2?) {
+  private randomInt(max, forbidden1?, forbidden2?, forbidden3?) {
     let value = -1;
     do {
       value = Math.floor(Math.random() * max);
     }
-    while(value == forbidden1 || value == forbidden2);
+    while(value == forbidden1 || value == forbidden2 || value == forbidden3);
 
     return value;
   }

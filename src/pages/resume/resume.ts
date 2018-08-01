@@ -44,6 +44,10 @@ export class ResumePage {
     });
   }
 
+  pourcentage(): number {
+    return Math.round((this.good/(this.bad+this.good))*100);
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad ResumePage');
   }

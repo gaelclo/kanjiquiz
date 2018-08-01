@@ -1,7 +1,5 @@
 page-home {
     ion-grid {
-        height: 90%;
-
         .row:nth-child(1) {
             margin-top: 5vh;
         }
@@ -10,11 +8,12 @@ page-home {
         }
         .row:nth-child(3) {
             margin-top: 20vh;
-        }
+        }   
         .kanji {
             font-size: 6em;
         }
     }
+    
     ion-col {
         text-align: center;
     }

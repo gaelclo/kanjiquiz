@@ -1,45 +1,44 @@
 page-resume {
-    ion-grid {
-        height: 90%;
-    }
-    
     .title {
         font-size: 22px;
         text-align: center;
     }
-    
     .furigana {
         font-style: italic;
         font-size: 1.6vh;
         margin-top: 5vh;
         text-align: center;
     }
-
     .translated {
         text-align: center;
         margin-top: 5vh;
         font-size: 2vh;
     }
-
     .cell {
         padding-left: 4vh;
         padding-right: 4vh;
         height: 2.5vh;
         border-radius: 20px;
     }
-
     .resultitle {
         margin-top: 12vh;
         font-size: 5vh;
         text-align: center;
     }
-
+    .resultpct {
+        text-align: center;
+        font-size: 10vh;
+        margin-bottom: 5%;
+        margin-top: 10%;
+    }
     .result {
         margin-top: 5vh;
         font-size: 3vh;
         text-align: center;
     }
-
+    .symbol {
+        font-size: 5vh;
+    }
     .restart {
         margin-top: 1vh;
     }
@@ -51,7 +50,4 @@ page-resume {
         background-color: #ffcfd7;
         color: #D04E50 !important;
     }
-
-    //padding-top: 25%;
-    //font-size: 5vh;
 }

@@ -13,7 +13,6 @@ page-quiz {
         padding-left: 4vh;
         margin-right: 5vh;
         padding-right: 4vh;
-        height: 2.5vh;
         padding-top: 0.1vh;
         padding-bottom: 0.1vh;
     }
@@ -68,6 +67,15 @@ page-quiz {
     }
     .radio-checked .radio-inner {
         display: none;
+    }
+    .button-effect {
+        display: none !important;
+    }
+    .green .radio-checked {
+        border-color: green;
+    }
+    .red .radio-checked {
+        border-color: red;
     }
     * {
         opacity: 1 !important;

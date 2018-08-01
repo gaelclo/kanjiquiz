@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Quiz</ion-title>
+    <ion-title>{{ 'quiz.title' | translate }}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -18,7 +18,7 @@
           <ion-grid>
             <ion-row>
                 <ion-col col-6>
-                  Kunyomi:
+                    {{ 'quiz.kunyomi' | translate }}:
                 </ion-col>
                 <ion-col col-6>{{format(selectedKanji.kunyomi)}}</ion-col>
             </ion-row>
@@ -28,7 +28,7 @@
             <ion-grid>
               <ion-row>
                 <ion-col col-6>
-                  Onyomi:
+                    {{ 'quiz.onyomi' | translate }}:
                 </ion-col>
                 <ion-col col-6>{{format(selectedKanji.onyomi)}}</ion-col>
               </ion-row>
@@ -46,7 +46,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col col-12><button ion-button block (click)="goNext()" *ngIf="next">{{this.current == this.total ? 'Finish': 'Next'}}</button></ion-col>
+        <ion-col col-12><button ion-button block (click)="goNext()" *ngIf="next">{{this.current == this.total ? ('quiz.finish' | translate) : ('quiz.next' | translate)}}</button></ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

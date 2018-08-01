@@ -1,62 +1,49 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Parameters</ion-title>
+    <ion-title>{{ 'parameter.title' | translate }}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-grid>
-      <ion-row>
-          <ion-col col-12>
-            <ion-list style="display: none;">
-              <ion-item>
-                <ion-label>Kanji to English</ion-label>
-                <ion-checkbox [(ngModel)]="kanjiToEnglish"></ion-checkbox>
-              </ion-item>
-            </ion-list>
-          </ion-col>
-      </ion-row>
-
-      <ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-list radio-group [(ngModel)]="jlptLevel">
+          <ion-item>
+            <ion-label>{{ 'parameter.jlptn5' | translate }}</ion-label>
+            <ion-radio value="5" checked></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{ 'parameter.jlptn4' | translate }}</ion-label>
+            <ion-radio value="4" [disabled]="true"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{ 'parameter.jlptn3' | translate }}</ion-label>
+            <ion-radio value="3" [disabled]="true"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{ 'parameter.jlptn2' | translate }}</ion-label>
+            <ion-radio value="2" [disabled]="true"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{ 'parameter.jlptn1' | translate }}</ion-label>
+            <ion-radio value="1" [disabled]="true"></ion-radio>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
         <ion-col col-12>
-          <ion-list radio-group [(ngModel)]="jlptLevel">
+          <ion-list>
             <ion-item>
-              <ion-label>JLPT N5</ion-label>
-              <ion-radio value="5" checked></ion-radio>
-            </ion-item>
-            <ion-item>
-              <ion-label>JLPT N4</ion-label>
-              <ion-radio value="4" [disabled]="true">></ion-radio>
-            </ion-item>
-            <ion-item>
-              <ion-label>JLPT N3</ion-label>
-              <ion-radio value="3" [disabled]="true"></ion-radio>
-            </ion-item>
-            <ion-item>
-              <ion-label>JLPT N2</ion-label>
-              <ion-radio value="2" [disabled]="true"></ion-radio>
-            </ion-item>
-            <ion-item>
-              <ion-label>JLPT N1</ion-label>
-              <ion-radio value="1" [disabled]="true"></ion-radio>
+              <ion-label color="primary">{{ 'parameter.numberKanji' | translate }}:</ion-label>
+              <ion-input [(ngModel)]="total" min=1 max=100 type="number"></ion-input>
             </ion-item>
           </ion-list>
         </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col col-12>
-            <ion-list>
-              <ion-item>
-                <ion-label color="primary">Number Of kanji:</ion-label>
-                <ion-input [(ngModel)]="total" min=1 max=100 type="number"></ion-input>
-              </ion-item>
-            </ion-list>
-          </ion-col>
-      </ion-row>
+    </ion-row>
   </ion-grid>
-  <div>
-    <button ion-button block (click)="push()">Start Quiz</button>
+  <div class="bottom-btn">
+    <button ion-button block (click)="push()">{{ 'parameter.startQuiz' | translate }}</button>
   </div>
 </ion-content>
-    
-    

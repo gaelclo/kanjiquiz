@@ -7,5 +7,27 @@
         "title": "Mode",
         "kanjis": "Kanjis",
         "words": "words"
+    },
+    "parameter": {
+        "title": "Parameters",
+        "jlptn5": "JLPT N5",
+        "jlptn4": "JLPT N4",
+        "jlptn3": "JLPT N3",
+        "jlptn2": "JLPT N2",
+        "jlptn1": "JLPT N1",
+        "numberKanji": "Number Of kanji",
+        "startQuiz": "Start Quiz"
+    },
+    "quiz": {
+        "title": "Quiz",
+        "kunyomi": "Kunyomi",
+        "onyomi": "Onyomi",
+        "next": "Next",
+        "finish": "Finish"
+    },
+    "resume": {
+        "title": "Result",
+        "yourresult": "Your result",
+        "home": "Home"
     }
 }

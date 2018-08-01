@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar hideBackButton="true">
-    <ion-title>Resume</ion-title>
+    <ion-title>{{ 'resume.title' | translate }}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -14,7 +14,10 @@
             <ion-col class="translated" col-12>"{{proverbSelected.translated}}"</ion-col>
         </ion-row>
         <ion-row>
-            <ion-col class="resultitle" col-12>Your result:</ion-col>
+            <ion-col class="resultitle" col-12>{{ 'resume.yourresult' | translate }}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="resultpct" col-12>{{pourcentage()}}<span class="symbol">%</span></ion-col>
         </ion-row>
         <ion-row class="result">
             <ion-col col-6><span class="bad cell">{{bad}}</span></ion-col>
@@ -22,7 +25,7 @@
         </ion-row>
     </ion-grid>
 
-    <div>
-        <button ion-button block (click)="restart()">Home</button>
+    <div class="bottom-btn">
+        <button ion-button block (click)="restart()">{{ 'resume.home' | translate }}</button>
     </div>
 </ion-content>
