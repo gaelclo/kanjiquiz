@@ -1,68 +1,68 @@
 {
     "home": {
         "title": "Kanji Quiz",
-        "start": "Start",
-        "welcome": "Welcome to Kanji quiz! An easy way to learn Kanjis and the most important word of the japanese language."
+        "start": "Commencez", 
+        "welcome": "Bienvenue sur Kanji Quiz! Entrainez vous à mémoriser les Kanjis et les mots les plus importants de la langue japonaise."
     },
     "selection": {
         "title": "Mode",
         "kanjis": "Kanjis",
-        "words": "words"
+        "words": "Mots"
     },
     "parameter": {
-        "title": "Parameters",
+        "title": "Paramètres",
         "jlptn5": "JLPT N5",
         "jlptn4": "JLPT N4",
         "jlptn3": "JLPT N3",
         "jlptn2": "JLPT N2",
         "jlptn1": "JLPT N1",
-        "numberKanji": "Number Of kanji",
+        "numberKanji": "Nombre de Kanjis",
         "alert": {
-            "title": "Wrong parameter",
-            "content": "Kanji's number must be between 1 and 100.",
-            "action": "Dismiss"
+            "title": "Paramètre incorrect.",
+            "content": "Le nombre de Kanji doit être entre 1 et 100.",
+            "action": "Fermer"
         },
-        "startQuiz": "Start Quiz"
+        "startQuiz": "Commencez Quiz"
     },
     "quiz": {
         "title": "Quiz",
         "kunyomi": "Kunyomi",
         "onyomi": "Onyomi",
-        "next": "Next",
-        "finish": "Finish"
+        "next": "Suivant",
+        "finish": "Terminer"
     },
     "resume": {
-        "title": "Result",
-        "yourresult": "Your result",
-        "home": "Home"
+        "title": "Résultat",
+        "yourresult": "Votre résultat",
+        "home": "Acceuil"
     },
     "kanji": {
-        "1": "one",
-        "2": "two",
-        "3": "three",
-        "4": "four",
-        "5": "five",
+        "1": "un",
+        "2": "deux",
+        "3": "trois",
+        "4": "quatre",
+        "5": "cinq",
         "6": "six",
-        "7": "seven",
-        "8": "eight",
-        "9": "nine",
-        "10": "ten",
-        "11": "hundred",
-        "12": "thousand",
-        "13": "ten thousand",
-        "14": "father",
-        "15": "mother",
-        "16": "friend",
-        "17": "woman,female",
-        "18": "man,male",
-        "19": "person",
-        "20": "child",
-        "21": "sun,day",
-        "22": "month,moon",
-        "23": "fire",
-        "24": "water",
-        "25": "tree,wood",
-        "26": "gold,money",
+        "7": "sept",
+        "8": "huit",
+        "9": "neuf",
+        "10": "dix",
+        "11": "cent",
+        "12": "mille",
+        "13": "dix mille",
+        "14": "père",
+        "15": "mère",
+        "16": "ami(e)",
+        "17": "femme",
+        "18": "homme",
+        "19": "personne",
+        "20": "enfant",
+        "21": "soleil,jour",
+        "22": "mois,lune",
+        "23": "feu",
+        "24": "eau",
+        "25": "arbre,bois",
+        "26": "or,argent",
         "27": "earth,ground,soil",
         "28": "book,root",
         "29": "rest,vacation",

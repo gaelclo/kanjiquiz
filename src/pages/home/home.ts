@@ -13,10 +13,9 @@ import { SelectionPage } from '../selection/selection';
 export class HomePage {
 
   constructor(public navCtrl: NavController, public platform: Platform, translate: TranslateService) {
-    translate.addLangs(['en']);
+    translate.addLangs(['en','fr']);
     translate.setDefaultLang('en');
-    translate.use('en');
-    //Example: translate.get('title').subscribe(v => {console.log("=>",v);});
+    translate.use('fr');
   }
 
   push() {

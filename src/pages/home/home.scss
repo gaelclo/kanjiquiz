@@ -5,12 +5,16 @@ page-home {
         }
         .row:nth-child(2) {
             margin-top: 5vh;
-        }
+        } 
         .row:nth-child(3) {
-            margin-top: 20vh;
+            margin-top: 5vh;
         }   
         .kanji {
             font-size: 6em;
+        }
+        .welcome {
+            text-align: center;
+            font-size: 1.1em;
         }
     }
     
