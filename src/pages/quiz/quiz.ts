@@ -1,5 +1,6 @@
 import { Component, ElementRef, Renderer2, QueryList, ViewChildren } from '@angular/core';
 import { Http } from '@angular/http';
+import { TranslateService } from '@ngx-translate/core';
 
 import { IonicPage, NavController, NavParams, RadioButton } from 'ionic-angular';
 import { ResumePage } from '../resume/resume';
@@ -29,7 +30,7 @@ export class QuizPage {
   radioButtonValid: RadioButton;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public elementRef: ElementRef, 
-    private renderer: Renderer2) {
+    private renderer: Renderer2, public translate: TranslateService) {
     
     this.total = navParams.get('numberKanji');
     
@@ -106,6 +107,13 @@ export class QuizPage {
   format(str: string): string {
     if(!str) return;
     return str.split(',').join(', ');
+  }
+
+  loadAndFormat(id: string): string {
+    if(!id) return;
+    let str: string;
+    this.translate.get('kanji.'+id).subscribe(v => {str = this.format(v.split(',').join(', '));});
+    return str;
   }
 
   private randomInt(max, forbidden1?, forbidden2?, forbidden3?) {

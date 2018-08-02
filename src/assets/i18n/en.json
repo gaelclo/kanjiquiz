@@ -2,7 +2,7 @@
     "home": {
         "title": "Kanji Quiz",
         "start": "Start",
-        "welcome": "Welcome to Kanji quiz! An easy way to learn Kanjis and the most important word of the japanese language."
+        "welcome": "Welcome to Kanji quiz ! An easy way to learn Kanjis and the most important word of the japanese language."
     },
     "selection": {
         "title": "Mode",
@@ -116,7 +116,7 @@
         "77": "to show",
         "78": "to go",
         "79": "to go out,to leave",
-        "80": "to go in,enter,to intert",
+        "80": "to go in,enter,to insert",
         "81": "to meet"
     }
 }

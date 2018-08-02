@@ -39,7 +39,7 @@
       <ion-col col12>
         <ion-list #answers radio-group>
           <ion-item *ngFor="let k of optionKanjis" col12>
-            <ion-label>{{format(k.meaning)}}</ion-label>
+            <ion-label>{{loadAndFormat(k.id)}}</ion-label>
             <ion-radio [value]="k.id" (click)="validate(k.id)" [disabled]="next" #answer></ion-radio>
           </ion-item>
         </ion-list>
