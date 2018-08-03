@@ -3,6 +3,8 @@ import { Http } from '@angular/http';
 
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { TranslateService } from '@ngx-translate/core';
+
 import { HomePage } from '../home/home';
 
 @IonicPage()
@@ -12,35 +14,33 @@ import { HomePage } from '../home/home';
 })
 export class ResumePage {
 
-  proverbs: any;
   proverbSelected: any;
   good: number;
   bad: number;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
-    this.http.get('assets/data/proverbe.json').subscribe(data => {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public translate: TranslateService) {
+    this.good = this.navParams.get('good');
+    this.bad = this.navParams.get('bad');
 
-      console.log("proverbs", data['_body']);
-      this.proverbs = JSON.parse(data['_body']).proverbs;
+    let total = this.good + this.bad;
+    let ratio = this.good/total;
 
-      this.good = this.navParams.get('good');
-      this.bad = this.navParams.get('bad');
+    let index: number;
+    if(ratio < 0.4) {
+      index = 0;
+    }
+    else if(ratio < 0.6) {
+      index = 1;
+    }
+    else if(ratio < 1) {
+      index = 2;
+    }
+    else {
+      index = 3;
+    }
 
-      let total = this.good + this.bad;
-      let ratio = this.good/total;
-
-      if(ratio < 0.4) {
-        this.proverbSelected = this.proverbs[0];
-      }
-      else if(ratio < 0.6) {
-        this.proverbSelected = this.proverbs[1];
-      }
-      else if(ratio < 1) {
-        this.proverbSelected = this.proverbs[2];
-      }
-      else {
-        this.proverbSelected = this.proverbs[3];
-      }
+    this.translate.get('proverbs').subscribe(v => {console.log("v=",v);
+      this.proverbSelected = v[index];
     });
   }
 

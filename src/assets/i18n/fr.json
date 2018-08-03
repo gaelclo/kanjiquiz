@@ -36,6 +36,32 @@
         "yourresult": "Votre résultat",
         "home": "Acceuil"
     },
+    "proverbs": [
+        {
+            "id":1,
+            "content": "猿も木から落ちる",
+            "furigana": "さるもきからおちる",
+            "translated":"Même le singe tombe de l’arbre."
+        },       
+        {
+            "id":2,
+            "content": "堪忍は一生の宝",
+            "furigana": "かんにんはいっしょうのたから",
+            "translated":"La patience est un trésor de la vie."        
+        },
+        {
+            "id":3,
+            "content": "英雄会い知る",
+            "furigana": "えいゆうあいしる",
+            "translated":"Les héros se connaissent." 
+        },
+        {
+            "id":4,
+            "content": "井の中の蛙大海を知らず",
+            "furigana": "いのなかのかえるたいかいをしらず",
+            "translated":"Une grenouille dans un étang ne connaît pas l’océan."        
+        }
+    ],
     "kanji": {
         "1": "un",
         "2": "deux",
