@@ -1,14 +1,17 @@
 page-selection {
-    ion-card {
+    .card {
         height: 30%;
         text-align: center;
-        background-color: #d0d1f7 !important;
     }
-
-    ion-card-content {
+    .card-content {
         height: 100%;
     }
-
+    .card:nth-child(1) .card-content {
+        background-color: #9096e8
+    }
+    .card:nth-child(2) .card-content {
+        background-color: #beecd9
+    }
     .centered-parent {
         position: relative ;
         height: 100%;

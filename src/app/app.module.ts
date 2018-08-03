@@ -12,9 +12,12 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { QuizPage } from '../pages/quiz/quiz';
-import { ParameterPage } from '../pages/parameter/parameter';
+import { ParameterKanjiPage } from '../pages/parameter-kanji/parameter-kanji';
+import { ParameterWordPage } from '../pages/parameter-word/parameter-word';
 import { ResumePage } from '../pages/resume/resume';
 import { SelectionPage } from '../pages/selection/selection';
+
+import { KanjiInputComponent } from '../components/kanji-input/kanji-input';
 
 import { HttpModule } from '@angular/http';
 
@@ -27,9 +30,11 @@ export function createTranslateLoader(http: HttpClient) {
     MyApp,
     HomePage,
     QuizPage,
-    ParameterPage,
+    ParameterKanjiPage,
+    ParameterWordPage,
     ResumePage,
-    SelectionPage
+    SelectionPage,
+    KanjiInputComponent
   ],
   imports: [
     HttpModule,
@@ -49,9 +54,11 @@ export function createTranslateLoader(http: HttpClient) {
     MyApp,
     HomePage,
     QuizPage,
-    ParameterPage,
+    ParameterKanjiPage,
+    ParameterWordPage,
     ResumePage,
-    SelectionPage
+    SelectionPage,
+    KanjiInputComponent
   ],
   providers: [
     StatusBar,

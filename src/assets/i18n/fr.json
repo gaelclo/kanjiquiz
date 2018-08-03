@@ -19,10 +19,11 @@
         "numberKanji": "Nombre de Kanjis",
         "alert": {
             "title": "Paramètre incorrect.",
-            "content": "Le nombre de Kanji doit être entre 1 et 100.",
+            "content": "Le nombre doit être entre 1 et 100.",
             "action": "Fermer"
         },
-        "startQuiz": "Commencez Quiz"
+        "startQuiz": "Commencez Quiz",
+        "all": "All"
     },
     "quiz": {
         "title": "Quiz",

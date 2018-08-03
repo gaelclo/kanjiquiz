@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ParameterPage } from './parameter';
+import { ParameterKanjiPage } from './parameter-kanji';
 
 @NgModule({
   declarations: [
   ],
   imports: [
-    IonicPageModule.forChild(ParameterPage),
+    IonicPageModule.forChild(ParameterKanjiPage),
   ],
 })
-export class ParameterPageModule {}
+export class ParameterKanjiPageModule {}

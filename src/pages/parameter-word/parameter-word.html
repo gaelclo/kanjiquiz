@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'parameter.title' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-list>
+          <ion-item>
+            <ion-label>{{ 'parameter.all' | translate }}</ion-label>
+            <ion-checkbox [(ngModel)]="all" disabled="false" checked="true"></ion-checkbox>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <kanji-input (change)="updateWord($event)"></kanji-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="bottom-btn hide-on-keyboard-open">
+      <button ion-button block (click)="push()">{{ 'parameter.startQuiz' | translate }}</button>
+  </div>
+</ion-content>

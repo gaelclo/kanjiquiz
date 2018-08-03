@@ -19,10 +19,11 @@
         "numberKanji": "Number Of kanji",
         "alert": {
             "title": "Wrong parameter",
-            "content": "Kanji's number must be between 1 and 100.",
+            "content": "Number must be between 1 and 100.",
             "action": "Dismiss"
         },
-        "startQuiz": "Start Quiz"
+        "startQuiz": "Start Quiz",
+        "all": "All"
     },
     "quiz": {
         "title": "Quiz",

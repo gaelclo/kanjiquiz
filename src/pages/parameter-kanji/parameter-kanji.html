@@ -34,12 +34,7 @@
     </ion-row>
     <ion-row>
         <ion-col col-12>
-          <ion-list>
-            <ion-item>
-              <ion-label color="primary">{{ 'parameter.numberKanji' | translate }}:</ion-label>
-              <ion-input [(ngModel)]="total" min=1 max=100 type="number" (blur)="blurKanjiNb($event)"></ion-input>
-            </ion-item>
-          </ion-list>
+          <kanji-input (change)="updateKanji($event)"></kanji-input>
         </ion-col>
     </ion-row>
   </ion-grid>

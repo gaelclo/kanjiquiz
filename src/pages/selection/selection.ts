@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { ParameterPage } from '../parameter/parameter';
+import { ParameterKanjiPage } from '../parameter-kanji/parameter-kanji';
+import { ParameterWordPage } from '../parameter-word/parameter-word';
 
 @IonicPage()
 @Component({
@@ -18,6 +19,10 @@ export class SelectionPage {
   }
 
   selectKanji() {
-    this.navCtrl.push(ParameterPage);
+    this.navCtrl.push(ParameterKanjiPage);
+  }
+  
+  selectWord() {
+    this.navCtrl.push(ParameterWordPage);
   }
 }
