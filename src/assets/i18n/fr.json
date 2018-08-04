@@ -149,7 +149,8 @@
     },
     "categorie": {
         "id": 1,
-        "label": "Personne"
+        "label": "Personne",
+        "key": "people"
     },
     "word": {
         "1": "humain",
