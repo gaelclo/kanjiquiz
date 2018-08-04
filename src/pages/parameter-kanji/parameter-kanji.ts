@@ -21,7 +21,7 @@ export class ParameterKanjiPage {
   }
 
   push() {
-    this.navCtrl.push(QuizPage, {'numberKanji' : this.total});
+    this.navCtrl.push(QuizPage, {'numberKanji' : this.total, 'jlptLvl' : this.jlptLevel});
   }
 
   updateKanji(tTotal: number) {

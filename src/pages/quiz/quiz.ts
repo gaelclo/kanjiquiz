@@ -13,14 +13,14 @@ import { ResumePage } from '../resume/resume';
 export class QuizPage {
 
   //https://translate.google.fr/translate_tts?ie=UTF-8&q=this%20is%20me&tl=fr&client=tw-ob
-  
   @ViewChildren("answer") items: QueryList<RadioButton>;
   
   good: number = 0;
   bad: number = 0;
   current: number = 1;
   total: number;
-  
+  jlptLvl: number = 5;
+
   kanjis : any;
   selectedKanji : any;
   optionKanjis: any;
@@ -31,21 +31,21 @@ export class QuizPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public elementRef: ElementRef, 
     private renderer: Renderer2, public translate: TranslateService) {
-    
+  
     this.total = navParams.get('numberKanji');
-    
-    console.log('nb', this.total);
-    this.load();
+    this.jlptLvl = navParams.get('jlptLvl');
+
+    this.load(this.jlptLvl);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuizPage');
   }
 
-  load() {
-    this.http.get('assets/data/kanji.json').subscribe(data => {
+  load(id: number) {
+    this.http.get('assets/data/kanji_'+id+'.json').subscribe(data => {
 
-      console.log("", data['_body']);
+      console.log("data", data['_body']);
 
       this.kanjis = JSON.parse(data['_body']).kanjis;
       this.calculateKanji();
@@ -72,23 +72,18 @@ export class QuizPage {
     let iKanji3 = this.randomInt(size, iKanji1, iKanji2);
     let iKanji4 = this.randomInt(size, iKanji1, iKanji2, iKanji3);
 
-
     this.selectedKanji = this.kanjis[iKanji1];
     this.optionKanjis = [this.kanjis[iKanji1], this.kanjis[iKanji2], this.kanjis[iKanji3], this.kanjis[iKanji4]];
-    console.log('A>',this.optionKanjis);
     this.optionKanjis = this.shuffle(this.optionKanjis);
-    console.log('B>',this.optionKanjis);
   }
 
   clear(): void {
     this.renderer.removeClass(this.radioButtonChecked._elementRef.nativeElement.parentNode, 'red');
     this.renderer.removeClass(this.radioButtonValid._elementRef.nativeElement.parentNode, 'green');
-
   }
 
   validate(): void {
     if(!this.next) {
-
       this.next = true;
       this.radioButtonValid  = this.items.filter(item => item.value == this.selectedKanji['id'])[0];
       this.radioButtonChecked  = this.items.filter(item => item.checked)[0];
@@ -122,7 +117,6 @@ export class QuizPage {
       value = Math.floor(Math.random() * max);
     }
     while(value == forbidden1 || value == forbidden2 || value == forbidden3);
-
     return value;
   }
 

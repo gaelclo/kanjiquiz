@@ -7,7 +7,7 @@
     "selection": {
         "title": "Mode",
         "kanjis": "Kanjis",
-        "words": "words"
+        "words": "Words"
     },
     "parameter": {
         "title": "Parameters",
@@ -23,7 +23,8 @@
             "action": "Dismiss"
         },
         "startQuiz": "Start Quiz",
-        "all": "All"
+        "all": "All",
+        "category": "Categories"
     },
     "quiz": {
         "title": "Quiz",
@@ -145,5 +146,32 @@
         "79": "to go out,to leave",
         "80": "to go in,enter,to insert",
         "81": "to meet"
-    }
+    },
+    "categorie": [
+        {
+            "id": 1,
+            "label": "People",
+            "key": "people"
+        }
+    ],
+    "word": {
+        "1": "human",
+        "2": "humanity",
+        "3": "person",
+        "4": "male",
+        "5": "man",
+        "6": "boy",
+        "7": "female",
+        "8": "woman",
+        "9": "girl",
+        "10": "baby",
+        "11": "youth, young person",
+        "12": "I, myself",
+        "13": "I, myself (most formal)",
+        "14": "I, myself (mainly used by males)",
+        "15": "I, myself (mainly used by males, informal)",
+        "16": "I, myself (mainly used by females)",
+        "17": "girl",
+        "18": "boy"
+    }    
 }

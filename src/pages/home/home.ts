@@ -15,7 +15,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, public platform: Platform, translate: TranslateService) {
     translate.addLangs(['en','fr']);
     translate.setDefaultLang('en');
-    translate.use('fr');
+    translate.use('en');
   }
 
   push() {

@@ -23,7 +23,8 @@
             "action": "Fermer"
         },
         "startQuiz": "Commencez Quiz",
-        "all": "All"
+        "all": "Tous",
+        "category": "Catégories"
     },
     "quiz": {
         "title": "Quiz",
@@ -145,5 +146,29 @@
         "79": "sortir,partir",
         "80": "entrer,insérer",
         "81": "rencontrer"
+    },
+    "categorie": {
+        "id": 1,
+        "label": "Personne"
+    },
+    "word": {
+        "1": "humain",
+        "2": "humanité",
+        "3": "personne",
+        "4": "male",
+        "5": "homme",
+        "6": "garçon",
+        "7": "femelle",
+        "8": "femme",
+        "9": "fille",
+        "10": "babé",
+        "11": "jeune",
+        "12": "Je, moi",
+        "13": "Je, moi (très formel)",
+        "14": "Je, moi (pour les hommes)",
+        "15": "Je, moi (pour les hommes, informel)",
+        "16": "Je, moi (pour les femmes)",
+        "17": "fille",
+        "18": "garçon"
     }
 }

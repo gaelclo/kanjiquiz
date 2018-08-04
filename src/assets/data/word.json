@@ -1,0 +1,112 @@
+{
+    "words": [
+        {
+            "id": 1,
+            "kanji": "人間",
+            "hiragana": "にんげん",
+            "categorie": "1"
+        }, 
+        {
+            "id": 2,
+            "kanji": "人類",
+            "hiragana": "じんるい",
+            "categorie": "1"
+        },
+        {
+            "id": 3,
+            "kanji": "人",
+            "hiragana": "ひと",
+            "categorie": "1"
+        },
+        {
+            "id": 4,
+            "kanji": "男",
+            "hiragana": "おとこ",
+            "categorie": "1"
+        },
+        {
+            "id": 5,
+            "kanji": "男の人",
+            "hiragana": "おとこのひと",
+            "categorie": "1"
+        },
+        {
+            "id": 6,
+            "kanji": "男の子",
+            "hiragana": "おとこのこ",
+            "categorie": "1"
+        },
+        {
+            "id": 7,
+            "kanji": "女",
+            "hiragana": "おんな",
+            "categorie": "1"
+        },
+        {
+            "id": 8,
+            "kanji": "女の人",
+            "hiragana": "おんなのひと",
+            "categorie": "1"
+        },
+        {
+            "id": 9,
+            "kanji": "女の子",
+            "hiragana": "おんなのこ",
+            "categorie": "1"
+        },
+        {
+            "id": 10,
+            "kanji": "赤ちゃん",
+            "hiragana": "あかちゃん",
+            "categorie": "1"
+        },
+        {
+            "id": 11,
+            "kanji": "若者",
+            "hiragana": "わかもの",
+            "categorie": "1"
+        },
+        {
+            "id": 12,
+            "kanji": "私",
+            "hiragana": "わたし",
+            "categorie": "1"
+        },
+        {
+            "id": 13,
+            "kanji": "私",
+            "hiragana": "わたくし",
+            "categorie": "1"
+        },
+        {
+            "id": 14,
+            "kanji": "僕",
+            "hiragana": "ぼく",
+            "categorie": "1"
+        },
+        {
+            "id": 15,
+            "kanji": "俺",
+            "hiragana": "おれ",
+            "categorie": "1"
+        },
+        {
+            "id": 16,
+            "kanji": "私",
+            "hiragana": "あたし",
+            "categorie": "1"
+        },
+        {
+            "id": 17,
+            "kanji": "少女",
+            "hiragana": "しょうじょ",
+            "categorie": "1"
+        },
+        {
+            "id": 18,
+            "kanji": "少年",
+            "hiragana": "しょうねん",
+            "categorie": "1"
+        }
+    ]
+}
