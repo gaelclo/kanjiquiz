@@ -4,13 +4,14 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { IonicPage, NavController, NavParams, RadioButton } from 'ionic-angular';
 import { ResumePage } from '../resume/resume';
+import { KanjizMathProvider } from '../../providers/kanjiz-math/kanjiz-math';
 
 @IonicPage()
 @Component({
-  selector: 'page-quiz',
-  templateUrl: 'quiz.html',
+  selector: 'page-quiz-kanji',
+  templateUrl: 'quiz-kanji.html',
 })
-export class QuizPage {
+export class QuizKanjiPage {
 
   //https://translate.google.fr/translate_tts?ie=UTF-8&q=this%20is%20me&tl=fr&client=tw-ob
   @ViewChildren("answer") items: QueryList<RadioButton>;
@@ -30,7 +31,7 @@ export class QuizPage {
   radioButtonValid: RadioButton;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public elementRef: ElementRef, 
-    private renderer: Renderer2, public translate: TranslateService) {
+    private renderer: Renderer2, public translate: TranslateService, public mathService: KanjizMathProvider) {
   
     this.total = navParams.get('numberKanji');
     this.jlptLvl = navParams.get('jlptLvl');
@@ -67,14 +68,14 @@ export class QuizPage {
   calculateKanji(): void {
     let size = this.kanjis.length;
 
-    let iKanji1 = this.randomInt(size);
-    let iKanji2 = this.randomInt(size, iKanji1);
-    let iKanji3 = this.randomInt(size, iKanji1, iKanji2);
-    let iKanji4 = this.randomInt(size, iKanji1, iKanji2, iKanji3);
+    let iKanji1 = this.mathService.randomInt(size);
+    let iKanji2 = this.mathService.randomInt(size, iKanji1);
+    let iKanji3 = this.mathService.randomInt(size, iKanji1, iKanji2);
+    let iKanji4 = this.mathService.randomInt(size, iKanji1, iKanji2, iKanji3);
 
     this.selectedKanji = this.kanjis[iKanji1];
     this.optionKanjis = [this.kanjis[iKanji1], this.kanjis[iKanji2], this.kanjis[iKanji3], this.kanjis[iKanji4]];
-    this.optionKanjis = this.shuffle(this.optionKanjis);
+    this.optionKanjis = this.mathService.shuffle(this.optionKanjis);
   }
 
   clear(): void {
@@ -109,28 +110,5 @@ export class QuizPage {
     let str: string;
     this.translate.get('kanji.'+id).subscribe(v => {str = this.format(v.split(',').join(', '));});
     return str;
-  }
-
-  private randomInt(max, forbidden1?, forbidden2?, forbidden3?) {
-    let value = -1;
-    do {
-      value = Math.floor(Math.random() * max);
-    }
-    while(value == forbidden1 || value == forbidden2 || value == forbidden3);
-    return value;
-  }
-
-  private shuffle(array: any): any{
-    let currentIndex = array.length, temporaryValue, randomIndex;
-  
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-    return array;
-  }
+  }  
 }

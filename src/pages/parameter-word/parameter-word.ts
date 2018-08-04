@@ -2,6 +2,7 @@ import { Component, QueryList, ViewChildren } from '@angular/core';
 import { IonicPage, NavController, NavParams, Checkbox } from 'ionic-angular';
 
 import { TranslateService } from '@ngx-translate/core';
+import { QuizWordPage } from '../quiz-word/quiz-word';
 
 @IonicPage()
 @Component({
@@ -32,7 +33,7 @@ export class ParameterWordPage {
   }
 
   push() {
-    this.navCtrl.push(null);
+    this.navCtrl.push(QuizWordPage, {'total': this.total});
   }
 
   updateWord(tTotal: number) {

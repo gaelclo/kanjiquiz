@@ -11,7 +11,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { QuizPage } from '../pages/quiz/quiz';
+import { QuizKanjiPage } from '../pages/quiz-kanji/quiz-kanji';
+import { QuizWordPage } from '../pages/quiz-word/quiz-word';
 import { ParameterKanjiPage } from '../pages/parameter-kanji/parameter-kanji';
 import { ParameterWordPage } from '../pages/parameter-word/parameter-word';
 import { ResumePage } from '../pages/resume/resume';
@@ -20,6 +21,7 @@ import { SelectionPage } from '../pages/selection/selection';
 import { KanjiInputComponent } from '../components/kanji-input/kanji-input';
 
 import { HttpModule } from '@angular/http';
+import { KanjizMathProvider } from '../providers/kanjiz-math/kanjiz-math';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -29,7 +31,8 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     MyApp,
     HomePage,
-    QuizPage,
+    QuizKanjiPage,
+    QuizWordPage,
     ParameterKanjiPage,
     ParameterWordPage,
     ResumePage,
@@ -53,7 +56,8 @@ export function createTranslateLoader(http: HttpClient) {
   entryComponents: [
     MyApp,
     HomePage,
-    QuizPage,
+    QuizKanjiPage,
+    QuizWordPage,
     ParameterKanjiPage,
     ParameterWordPage,
     ResumePage,
@@ -63,7 +67,8 @@ export function createTranslateLoader(http: HttpClient) {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    KanjizMathProvider
   ]
 })
 export class AppModule {}

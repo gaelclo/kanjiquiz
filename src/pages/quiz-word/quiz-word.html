@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'quiz.title' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding *ngIf="selectedWord && optionWords">
+  <p>{{selectedWord.kanji}}</p>
+  <p *ngFor="let o of optionWords">{{o.kanji}}</p>
+</ion-content>

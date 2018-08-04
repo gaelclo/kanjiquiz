@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { QuizPage } from '../quiz/quiz';
+import { QuizKanjiPage } from '../quiz-kanji/quiz-kanji';
 
 @IonicPage()
 @Component({
@@ -21,7 +21,7 @@ export class ParameterKanjiPage {
   }
 
   push() {
-    this.navCtrl.push(QuizPage, {'numberKanji' : this.total, 'jlptLvl' : this.jlptLevel});
+    this.navCtrl.push(QuizKanjiPage, {'numberKanji' : this.total, 'jlptLvl' : this.jlptLevel});
   }
 
   updateKanji(tTotal: number) {
