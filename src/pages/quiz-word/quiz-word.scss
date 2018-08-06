@@ -1,3 +1,27 @@
 page-quiz-word {
+    .character {
+        text-align: center;
+        font-size: 3vh !important;
+    }
+    .box {
+        height: 5vh;
+        border: 1px solid #e6e3e3;
+        width: 4vh;
+        margin-right: 2vh;
+    }
+    .container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
 
+    .word {
+        font-size: 2vh;
+        text-align: center;
+        margin-bottom: 0vh;
+        margin-top: 8vh;
+    }
+    .bottom {
+        margin-top: 12vh;
+    }
 }

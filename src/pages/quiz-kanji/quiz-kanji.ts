@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, Renderer2, QueryList, ViewChildren, ViewChild } from '@angular/core';
 import { Http } from '@angular/http';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -13,9 +13,8 @@ import { KanjizMathProvider } from '../../providers/kanjiz-math/kanjiz-math';
 })
 export class QuizKanjiPage {
 
-  //https://translate.google.fr/translate_tts?ie=UTF-8&q=this%20is%20me&tl=fr&client=tw-ob
   @ViewChildren("answer") items: QueryList<RadioButton>;
-  
+
   good: number = 0;
   bad: number = 0;
   current: number = 1;
@@ -110,5 +109,5 @@ export class QuizKanjiPage {
     let str: string;
     this.translate.get('kanji.'+id).subscribe(v => {str = this.format(v.split(',').join(', '));});
     return str;
-  }  
+  } 
 }

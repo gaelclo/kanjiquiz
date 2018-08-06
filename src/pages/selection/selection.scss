@@ -12,17 +12,4 @@ page-selection {
     .card:nth-child(2) .card-content {
         background-color: #beecd9
     }
-    .centered-parent {
-        position: relative ;
-        height: 100%;
-        text-align: center;
-    }
-    .centered {
-        margin: 0;
-        position: absolute;               
-        top: 50%;
-        transform: translate(0, -50%);
-        width: 100%;
-        font-size: 4vh;
-    }
 }

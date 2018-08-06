@@ -33,7 +33,7 @@ export class ParameterWordPage {
   }
 
   push() {
-    this.navCtrl.push(QuizWordPage, {'total': this.total});
+    this.navCtrl.push(QuizWordPage, {'numberWord': this.total});
   }
 
   updateWord(tTotal: number) {

@@ -4,43 +4,9 @@ page-quiz-kanji {
         margin-top: 1vh;
         margin-bottom: 3vh;
     }
-    .counter {
-        position: fixed;
-        right: 2vh;
-    }
-    .aGood, .aBad {
-        margin-left: 5vh;
-        padding-left: 4vh;
-        margin-right: 5vh;
-        padding-right: 4vh;
-        padding-top: 0.1vh;
-        padding-bottom: 0.1vh;
-    }
-    .aGood {
-        background-color: #8bf38b;
-        color: green;
-        border-radius: 10px;
-    }
-    .aBad {
-        background-color: #fdb0b1;
-        color: #D04E50;
-        border-radius: 10px;
-    }
     .kanji {
         text-align: center;
         font-size: 100px;
-    }
-    .green {
-        background-color: #e6ffe6;
-    }
-    .green .label {
-        color: green !important;
-    }
-    .red {
-        background-color: #ffcfd7;
-    }
-    .red .label {
-        color: #D04E50 !important;
     }
     .item-radio {
         padding-left: 0;
@@ -70,12 +36,6 @@ page-quiz-kanji {
     }
     .button-effect {
         display: none !important;
-    }
-    .green .radio-checked {
-        border-color: green;
-    }
-    .red .radio-checked {
-        border-color: red;
     }
     * {
         opacity: 1 !important;
