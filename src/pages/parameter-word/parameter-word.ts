@@ -21,7 +21,9 @@ export class ParameterWordPage {
       this.translate.get('categorie').subscribe(values => {
         this.categories = values;
           this.translate.get('parameter.all').subscribe(value => {
-          this.categories.unshift({id: 0, label: value, key: "all"});
+            if(this.categories[0].key != 'all') {
+              this.categories.unshift({id: 0, label: value, key: "all"});
+            }
           this.categories.forEach(cat => cat.checked = true);
         });
       });
