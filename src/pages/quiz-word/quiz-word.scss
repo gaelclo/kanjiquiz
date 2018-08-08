@@ -7,21 +7,38 @@ page-quiz-word {
         height: 5vh;
         border: 1px solid #e6e3e3;
         width: 4vh;
-        margin-right: 2vh;
+        border-radius: 5px;
     }
     .container {
         text-align: center;
         display: flex;
         justify-content: center;
     }
-
     .word {
-        font-size: 2vh;
+        font-size: 3vh;
         text-align: center;
         margin-bottom: 0vh;
         margin-top: 8vh;
     }
     .bottom {
         margin-top: 12vh;
+    }
+    .multiple:not(:first-child) {
+        margin-left: 2vh;
+    }
+    .small {
+        font-size: 1.5vh;
+    }
+    .scroll-content {
+        margin-top: 10% !important;
+    }
+    .good-result {
+        color: green;
+    }
+    .bad-result {
+        color: #D04E50;
+    }
+    .result {
+        font-size: 2vh;
     }
 }

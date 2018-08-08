@@ -23,9 +23,7 @@
 .bottom-btn-when-footer {
     position: fixed;
     top: 83%;
-    width: 100%;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    width: 93%;
 }
 .centered-parent {
     position: relative ;
@@ -43,33 +41,35 @@
 .counter {
     position: fixed;
     right: 2vh;
+    margin-top: 2%;
 }
-.aGood, .aBad {
+.answer {
     margin-left: 5vh;
     padding-left: 4vh;
     margin-right: 5vh;
     padding-right: 4vh;
     padding-top: 0.1vh;
     padding-bottom: 0.1vh;
+    border-radius: 10px;
 }
-.aGood {
+.good-answer {
     background-color: #8bf38b;
     color: green;
-    border-radius: 10px;
 }
-.aBad {
+.bad-answer {
     background-color: #fdb0b1;
     color: #D04E50;
-    border-radius: 10px;
 }
 .green {
     background-color: #e6ffe6;
+    color: green !important;
 }
 .green .label {
     color: green !important;
 }
 .red {
     background-color: #ffcfd7;
+    color: #D04E50;
 }
 .red .label {
     color: #D04E50 !important;
@@ -79,4 +79,10 @@
 }
 .red .radio-checked {
     border-color: red;
+}
+.italic {
+    font-style: italic;
+}
+.label {
+    opacity: 1 !important;
 }

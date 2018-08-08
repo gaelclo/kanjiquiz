@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2, QueryList, ViewChildren, ViewChild } from '@angular/core';
+import { Component, ElementRef, Renderer2, QueryList, ViewChildren } from '@angular/core';
 import { Http } from '@angular/http';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -44,15 +44,13 @@ export class QuizKanjiPage {
 
   load(id: number) {
     this.http.get('assets/data/kanji_'+id+'.json').subscribe(data => {
-
-      console.log("data", data['_body']);
-
       this.kanjis = JSON.parse(data['_body']).kanjis;
       this.calculateKanji();
     });
   }
 
   goNext(): void {
+    console.log('goNext');
     if(this.current<this.total) {
       this.current++;
       this.next = false;

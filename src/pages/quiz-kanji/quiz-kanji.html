@@ -43,17 +43,18 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  
+  <div class="bottom-btn-when-footer">
+    <ion-col col-12><button ion-button block (click)="goNext()" *ngIf="next">{{this.current == this.total ? ('quiz.finish' | translate) : ('quiz.next' | translate)}}</button></ion-col>
+  </div>
 </ion-content>
 
-<div class="bottom-btn-when-footer">
-  <ion-col col-12><button ion-button block (click)="goNext()" *ngIf="next">{{this.current == this.total ? ('quiz.finish' | translate) : ('quiz.next' | translate)}}</button></ion-col>
-</div>
 
 <ion-footer>
   <ion-toolbar>
       <ion-segment>
-      <div class='aGood'>{{good}}</div>
-      <div class='aBad'>{{bad}}</div>
+      <div class='good-answer answer'>{{good}}</div>
+      <div class='bad-answer answer'>{{bad}}</div>
     </ion-segment>
   </ion-toolbar>
 </ion-footer>

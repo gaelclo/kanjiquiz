@@ -31,7 +31,9 @@
         "kunyomi": "Kunyomi",
         "onyomi": "Onyomi",
         "next": "Next",
-        "finish": "Finish"
+        "finish": "Finish",
+        "success": "Success",
+        "incorrect": "Incorrect, it is: {{0}}"
     },
     "resume": {
         "title": "Result",

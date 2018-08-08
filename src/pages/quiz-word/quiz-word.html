@@ -14,35 +14,42 @@
     </ion-row>
     <ion-row>
         <ion-col col12>
-          <div class="word">{{ selectedWord.hiragana }}</div>
+          <div class="word italic small">{{ selectedWord.romanji }}</div>
         </ion-col>
       </ion-row>
     <ion-row>
       <ion-col col12> 
         <div class="container">
-          <div *ngFor="let s of solution; let i=index" class="box" (click)="clearSelection(i)" #solution><div class="character">{{s}}</div></div>
+          <div *ngFor="let s of solution; let i=index" class="box multiple" (click)="clearSelection(i)" #solution><div class="character">{{s}}</div></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="next">
+      <ion-col col12>
+        <div class="container result {{ isValidAnswer() ? 'good-result' : 'bad-result' }}">
+          {{ isValidAnswer() ? ('quiz.success' | translate) : ('quiz.incorrect' | translate:param_result) }}
         </div>
       </ion-col>
     </ion-row>
     <ion-row class="bottom">
       <ion-col col12>
         <div class="container">
-          <div *ngFor="let s of optionWords" class="box centered-parent" (click)="selected(s)"><div class="character centered">{{s}}</div></div>
+          <div *ngFor="let s of optionWords" class="box multiple centered-parent" (click)="selected(s)"><div class="character centered">{{s}}</div></div>
         </div>
       </ion-col>
     </ion-row>
   </ion-grid>
+  
+  <div class="bottom-btn-when-footer">
+      <ion-col col-12><button ion-button block (click)="goNext()" *ngIf="next">{{this.current == this.total ? ('quiz.finish' | translate) : ('quiz.next' | translate)}}</button></ion-col>
+  </div>
 </ion-content>
 
-<div class="bottom-btn-when-footer">
-    <ion-col col-12><button ion-button block (click)="goNext()" *ngIf="next">{{this.current == this.total ? ('quiz.finish' | translate) : ('quiz.next' | translate)}}</button></ion-col>
-</div>
-
 <ion-footer>
-    <ion-toolbar>
-        <ion-segment>
-        <div class='aGood'>{{good}}</div>
-        <div class='aBad'>{{bad}}</div>
-      </ion-segment>
-    </ion-toolbar>
-  </ion-footer>
+  <ion-toolbar>
+      <ion-segment>
+      <div class='good-answer answer'>{{good}}</div>
+      <div class='bad-answer answer'>{{bad}}</div>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>

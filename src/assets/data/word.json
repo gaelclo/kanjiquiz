@@ -4,108 +4,126 @@
             "id": 1,
             "kanji": "人間",
             "hiragana": "にんげん",
+            "romanji": "ningen",
             "categorie": "1"
         }, 
         {
             "id": 2,
             "kanji": "人類",
             "hiragana": "じんるい",
+            "romanji": "jinrui",
             "categorie": "1"
         },
         {
             "id": 3,
             "kanji": "人",
             "hiragana": "ひと",
+            "romanji": "hito",
             "categorie": "1"
         },
         {
             "id": 4,
             "kanji": "男",
             "hiragana": "おとこ",
+            "romanji": "otoko",
             "categorie": "1"
         },
         {
             "id": 5,
             "kanji": "男の人",
             "hiragana": "おとこのひと",
+            "romanji": "otokonohito",
             "categorie": "1"
         },
         {
             "id": 6,
             "kanji": "男の子",
             "hiragana": "おとこのこ",
+            "romanji": "otokonoko",
             "categorie": "1"
         },
         {
             "id": 7,
             "kanji": "女",
             "hiragana": "おんな",
+            "romanji": "onna",
             "categorie": "1"
         },
         {
             "id": 8,
             "kanji": "女の人",
             "hiragana": "おんなのひと",
+            "romanji": "onnanohito",
             "categorie": "1"
         },
         {
             "id": 9,
             "kanji": "女の子",
             "hiragana": "おんなのこ",
+            "romanji": "onnanoko",
             "categorie": "1"
         },
         {
             "id": 10,
             "kanji": "赤ちゃん",
             "hiragana": "あかちゃん",
+            "romanji": "akachan",
             "categorie": "1"
         },
         {
             "id": 11,
             "kanji": "若者",
             "hiragana": "わかもの",
+            "romanji": "wakamono",
             "categorie": "1"
         },
         {
             "id": 12,
             "kanji": "私",
             "hiragana": "わたし",
+            "romanji": "watashi",
             "categorie": "1"
         },
         {
             "id": 13,
             "kanji": "私",
             "hiragana": "わたくし",
+            "romanji": "watakushi",
             "categorie": "1"
         },
         {
             "id": 14,
             "kanji": "僕",
             "hiragana": "ぼく",
+            "romanji": "boku",
             "categorie": "1"
         },
         {
             "id": 15,
             "kanji": "俺",
             "hiragana": "おれ",
+            "romanji": "ore",
             "categorie": "1"
         },
         {
             "id": 16,
             "kanji": "私",
             "hiragana": "あたし",
+            "romanji": "atashi",
             "categorie": "1"
         },
         {
             "id": 17,
             "kanji": "少女",
             "hiragana": "しょうじょ",
+            "romanji": "shoujo",
             "categorie": "1"
         },
         {
             "id": 18,
             "kanji": "少年",
             "hiragana": "しょうねん",
+            "romanji": "shounen",
             "categorie": "1"
         }
     ]

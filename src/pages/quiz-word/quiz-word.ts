@@ -1,10 +1,11 @@
-import { Component, ViewChild, ElementRef, Renderer2, ViewChildren, QueryList } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChildren, QueryList } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 
 import { TranslateService } from '@ngx-translate/core';
 
 import { KanjizMathProvider } from '../../providers/kanjiz-math/kanjiz-math';
+import { ResumePage } from '../resume/resume';
 
 @IonicPage()
 @Component({
@@ -28,13 +29,24 @@ export class QuizWordPage {
 
   next: boolean = false;
 
+  param_result: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public mathService: KanjizMathProvider,
-      public translate: TranslateService, private renderer: Renderer2,) {
+      public translate: TranslateService, private renderer: Renderer2) {
     this.http.get('assets/data/word.json').subscribe(data => {
       this.words = JSON.parse(data['_body']).words;
       this.total = navParams.get('numberWord');
 
       this.calculateWords();
+
+      this.solutions.changes.forEach(s => {
+        if(this.next) {
+          let classColor = this.isValidAnswer() ? 'green' : 'red'; 
+          this.solutions.toArray().forEach(s => {
+            this.renderer.addClass(s.nativeElement, classColor);
+          });
+        }
+      });
     });
   }
 
@@ -51,9 +63,9 @@ export class QuizWordPage {
     let optionWordIdx3 = this.mathService.randomInt(size, selectedWordIdx, optionWordIdx1, optionWordIdx2);
 
     this.selectedWord = this.words[selectedWordIdx];
-    [this.words[optionWordIdx1], this.words[optionWordIdx2], this.words[optionWordIdx3]].forEach(o => {
+    [this.words[selectedWordIdx], this.words[optionWordIdx1], this.words[optionWordIdx2], this.words[optionWordIdx3]].forEach(o => {
       this.optionWords = this.optionWords.concat(o.kanji.split(''));
-      //this.mathService.shuffle(output);
+      this.optionWords = this.mathService.shuffle(Array.from(new Set(this.optionWords)));
     });
 
     this.selectedWord.kanji.split('').forEach(c => {this.solution.push(' ')});
@@ -90,28 +102,28 @@ export class QuizWordPage {
   }
 
   goNext(): void {
+    console.log('goNext');
     if(this.current<this.total) {
       this.current++;
       this.next = false;
+      this.calculateWords();
     }
     else {
-      this.navCtrl.push(null, {"good": this.good, "bad": this.bad});
+      this.navCtrl.push(ResumePage, {"good": this.good, "bad": this.bad});
     }
   }
 
   validate(): void {
-    console.log('A',this.solution.join(''));
-    console.log('B',this.selectedWord.kanji);
-    console.log('solution', this.solutions);
-    if(this.solution.join('') == this.selectedWord.kanji){
-      this.solutions.toArray().forEach(s => {
-        this.renderer.addClass(s.nativeElement, 'green');
-      });
+    if(this.isValidAnswer()){
+      this.good++;
     }
     else {
-      this.solutions.toArray().forEach(s => {
-        this.renderer.addClass(s.nativeElement, 'red');
-      });
+      this.bad++;
+      this.param_result = {0: this.selectedWord.kanji};
     }
+  }
+
+  isValidAnswer(): boolean {
+    return this.solution.join('') == this.selectedWord.kanji;
   }
 }
