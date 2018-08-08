@@ -102,7 +102,8 @@ export class QuizWordPage {
   }
 
   goNext(): void {
-    console.log('goNext');
+    this.solution = [];
+    this.optionWords = [];
     if(this.current<this.total) {
       this.current++;
       this.next = false;
