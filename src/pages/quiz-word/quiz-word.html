@@ -20,7 +20,7 @@
     <ion-row>
       <ion-col col12> 
         <div class="container">
-          <div *ngFor="let s of solution; let i=index" class="box multiple" (click)="clearSelection(i)" #solution><div class="character">{{s}}</div></div>
+          <div *ngFor="let s of solution; let i=index" class="box multiple centered-parent" (click)="clearSelection(i)" #solution><div class="centered character">{{s}}</div></div>
         </div>
       </ion-col>
     </ion-row>

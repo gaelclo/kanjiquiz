@@ -46,6 +46,10 @@ export class ParameterWordPage {
     return id==0 || !this.categories.filter(c => c.id == 0).pop().checked;
   }
 
+  hasActiveCategory(): boolean {
+    return this.categories.filter(c => c.checked).length > 0;
+  }
+
   updateChecboxes() {
     if(this.categories.filter(c => c.id == 0).pop().checked) {
       this.categories.forEach(c => c.checked = true);
