@@ -158,7 +158,12 @@
         {
             "id": 2,
             "label": "Occupation",
-            "key":"occupation"
+            "key": "occupation"
+        },
+        {
+            "id": 3,
+            "label": "Family",
+            "key": "family"
         }
     ],
     "word": {
@@ -194,6 +199,33 @@
         "30": "teacher",
         "31": "academic teacher",
         "32": "singer",
-        "33": "engineer"
+        "33": "engineer",
+        "34": "family",
+        "35": "parents",
+        "36": "children, child",
+        "37": "father",
+        "38": "father",
+        "39": "wife",
+        "40": "husband",
+        "41": "older brother",
+        "42": "older brother",
+        "43": "older sister",       
+        "44": "older sister",
+        "45": "younger brother",
+        "46": "younger sister",
+        "47": "brothers, siblings",
+        "48": "sisters",
+        "49": "grandfather",
+        "50": "grandfather",
+        "51": "grandmother",
+        "52": "grandmother",
+        "53": "grandchild",        
+        "54": "uncle",
+        "55": "uncle",
+        "56": "aunt",
+        "57": "aunt",
+        "58": "niece",
+        "59": "oi",
+        "60": "cousin"
     }    
 }

@@ -223,12 +223,202 @@
             "hiragana": "かしゅ",
             "romanji": "kashu",
             "categorie": "2"
-        },       {
+        },       
+        {
             "id": 33,
             "kanji": "エンジニア",
             "hiragana": "",
             "romanji": "enjinia",
             "categorie": "2"
+        },       
+        {
+            "id": 34,
+            "kanji": "家族",
+            "hiragana": "かぞく",
+            "romanji": "kazoku",
+            "categorie": "3"
+        },       
+        {
+            "id": 35,
+            "kanji": "両親",
+            "hiragana": "りょうしん",
+            "romanji": "ryoushin",
+            "categorie": "3"
+        },       
+        {
+            "id": 36,
+            "kanji": "子供",
+            "hiragana": "こども",
+            "romanji": "kodomo",
+            "categorie": "3"
+        },       
+        {
+            "id": 37,
+            "kanji": "父",
+            "hiragana": "",
+            "romanji": "otou-san",
+            "categorie": "3"
+        },       
+        {
+            "id": 38,
+            "kanji": "",
+            "hiragana": "ちち",
+            "romanji": "chichi",
+            "categorie": "3"
+        },       
+        {
+            "id": 39,
+            "kanji": "妻",
+            "hiragana": "つま",
+            "romanji": "tsuma",
+            "categorie": "3"
+        },       
+        {
+            "id": 40,
+            "kanji": "夫",
+            "hiragana": "おっと",
+            "romanji": "otto",
+            "categorie": "3"
+        },       
+        {
+            "id": 41,
+            "kanji": "兄",
+            "hiragana": "",
+            "romanji": "onī-san",
+            "categorie": "3"
+        },       
+        {
+            "id": 42,
+            "kanji": "",
+            "hiragana": "あに",
+            "romanji": "ani",
+            "categorie": "3"
+        },       
+        {
+            "id": 43,
+            "kanji": "姉",
+            "hiragana": "",
+            "romanji": "onē-san",
+            "categorie": "3"
+        },       
+        {
+            "id": 44,
+            "kanji": "",
+            "hiragana": "あね",
+            "romanji": "ane",
+            "categorie": "3"
+        },       
+        {
+            "id": 45,
+            "kanji": "弟",
+            "hiragana": "おとうと",
+            "romanji": "otōto",
+            "categorie": "3"
+        },       
+        {
+            "id": 46,
+            "kanji": "妹",
+            "hiragana": "いもうと",
+            "romanji": "imōto",
+            "categorie": "3"
+        },       
+        {
+            "id": 47,
+            "kanji": "兄弟",
+            "hiragana": "きょうだい",
+            "romanji": "kyōdai",
+            "categorie": "3"
+        },       
+        {
+            "id": 48,
+            "kanji": "姉妹",
+            "hiragana": "しまい",
+            "romanji": "shimai",
+            "categorie": "3"
+        },       
+        {
+            "id": 49,
+            "kanji": "祖父",
+            "hiragana": "",
+            "romanji": "ojii-san",
+            "categorie": "3"
+        },       
+        {
+            "id": 50,
+            "kanji": "",
+            "hiragana": "そふ",
+            "romanji": "sofu",
+            "categorie": "3"
+        },       
+        {
+            "id": 51,
+            "kanji": "祖母",
+            "hiragana": "",
+            "romanji": "obaa-san",
+            "categorie": "3"
+        },       
+        {
+            "id": 52,
+            "kanji": "",
+            "hiragana": "そぼ",
+            "romanji": "sobo",
+            "categorie": "3"
+        },       
+        {
+            "id": 53,
+            "kanji": "孫",
+            "hiragana": "まご",
+            "romanji": "mago",
+            "categorie": "3"
+        },       
+        {
+            "id": 54,
+            "kanji": "叔父",
+            "hiragana": "",
+            "romanji": "oji-san",
+            "categorie": "3"
+        },       
+        {
+            "id": 55,
+            "kanji": "伯父",
+            "hiragana": "おじ",
+            "romanji": "oji",
+            "categorie": "3"
+        },       
+        {
+            "id": 56,
+            "kanji": "叔母",
+            "hiragana": "",
+            "romanji": "oba-san",
+            "categorie": "3"
+        },       
+        {
+            "id": 57,
+            "kanji": "伯母",
+            "hiragana": "おば",
+            "romanji": "oba",
+            "categorie": "3"
+        },       
+        {
+            "id": 58,
+            "kanji": "姪",
+            "hiragana": "めい",
+            "romanji": "mei",
+            "categorie": "3"
+        },       
+        {
+            "id": 59,
+            "kanji": "甥",
+            "hiragana": "おい",
+            "romanji": "oi",
+            "categorie": "3"
+        },       
+        {
+            "id": 60,
+            "kanji": "",
+            "hiragana": "いとこ",
+            "romanji": "itoko",
+            "categorie": "3"
         }
     ]
 }
