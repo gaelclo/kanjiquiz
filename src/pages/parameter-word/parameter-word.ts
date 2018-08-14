@@ -35,7 +35,7 @@ export class ParameterWordPage {
   }
 
   push() {
-    this.navCtrl.push(QuizWordPage, {'numberWord': this.total});
+    this.navCtrl.push(QuizWordPage, {'numberWord': this.total, 'categories': this.categories.filter(c => c.checked)});
   }
 
   updateWord(tTotal: number) {

@@ -154,6 +154,11 @@
             "id": 1,
             "label": "People",
             "key": "people"
+        },
+        {
+            "id": 2,
+            "label": "Occupation",
+            "key":"occupation"
         }
     ],
     "word": {
@@ -174,6 +179,21 @@
         "15": "I, myself (mainly used by males, informal)",
         "16": "I, myself (mainly used by females)",
         "17": "girl",
-        "18": "boy"
+        "18": "boy",
+        "19": "doctor",
+        "20": "nurse",
+        "21": "female nurse",
+        "22": "dentist (1)",
+        "23": "dentist (2)",
+        "24": "politician",
+        "25": "lawyer",
+        "26": "firefighter",
+        "27": "police officer",
+        "28": "soldier",
+        "29": "architect",
+        "30": "teacher",
+        "31": "academic teacher",
+        "32": "singer",
+        "33": "engineer"
     }    
 }

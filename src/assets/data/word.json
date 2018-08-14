@@ -125,6 +125,110 @@
             "hiragana": "しょうねん",
             "romanji": "shounen",
             "categorie": "1"
+        },
+        {
+            "id": 19,
+            "kanji": "医者",
+            "hiragana": "いしゃ",
+            "romanji": "isha",
+            "categorie": "2"
+        },
+        {
+            "id": 20,
+            "kanji": "看護師",
+            "hiragana": "かんごし",
+            "romanji": "kangoshi",
+            "categorie": "2"
+        },
+        {
+            "id": 21,
+            "kanji": "看護婦",
+            "hiragana": "かんごふ",
+            "romanji": "kangofu",
+            "categorie": "2"
+        },
+        {
+            "id": 22,
+            "kanji": "歯科医",
+            "hiragana": "しかい",
+            "romanji": "shikai",
+            "categorie": "2"
+        },
+        {
+            "id": 23,
+            "kanji": "歯医者",
+            "hiragana": "はいしゃ",
+            "romanji": "haisha",
+            "categorie": "2"
+        },
+        {
+            "id": 24,
+            "kanji": "政治家",
+            "hiragana": "せいじか",
+            "romanji": "seijika",
+            "categorie": "2"
+        },
+        {
+            "id": 25,
+            "kanji": "弁護士",
+            "hiragana": "べんごし",
+            "romanji": "bengoshi",
+            "categorie": "2"
+        },
+        {
+            "id": 26,
+            "kanji": "消防士",
+            "hiragana": "しょうぼうし",
+            "romanji": "shouboushi",
+            "categorie": "2"
+        },
+        {
+            "id": 27,
+            "kanji": "警察官",
+            "hiragana": "けいさつかん",
+            "romanji": "keisatsukan",
+            "categorie": "2"
+        },
+        {
+            "id": 28,
+            "kanji": "兵士",
+            "hiragana": "へいし",
+            "romanji": "heishi",
+            "categorie": "2"
+        },
+        {
+            "id": 29,
+            "kanji": "建築家",
+            "hiragana": "けんちくか",
+            "romanji": "kenchikuka",
+            "categorie": "2"
+        },
+        {
+            "id": 30,
+            "kanji": "先生",
+            "hiragana": "せんせい",
+            "romanji": "sensei",
+            "categorie": "2"
+        },
+        {
+            "id": 31,
+            "kanji": "教師",
+            "hiragana": "きょうし",
+            "romanji": "kyoushi",
+            "categorie": "2"
+        },
+        {
+            "id": 32,
+            "kanji": "歌手",
+            "hiragana": "かしゅ",
+            "romanji": "kashu",
+            "categorie": "2"
+        },       {
+            "id": 33,
+            "kanji": "エンジニア",
+            "hiragana": "",
+            "romanji": "enjinia",
+            "categorie": "2"
         }
     ]
 }

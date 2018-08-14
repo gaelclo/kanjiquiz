@@ -34,8 +34,15 @@ export class QuizWordPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public mathService: KanjizMathProvider,
       public translate: TranslateService, private renderer: Renderer2) {
     this.http.get('assets/data/word.json').subscribe(data => {
-      this.words = JSON.parse(data['_body']).words;
       this.total = navParams.get('numberWord');
+
+      let categories: Array<number> = [];
+      navParams.get('categories').forEach(element => {
+        categories.push(element.id);
+      });
+      
+      this.words = JSON.parse(data['_body']).words;
+      this.words = this.words.filter(w => categories.indexOf(Number(w.categorie))!=-1);
 
       this.calculateWords();
 
@@ -65,6 +72,9 @@ export class QuizWordPage {
     this.selectedWord = this.words[selectedWordIdx];
     [this.words[selectedWordIdx], this.words[optionWordIdx1], this.words[optionWordIdx2], this.words[optionWordIdx3]].forEach(o => {
       this.optionWords = this.optionWords.concat(o.kanji.split(''));
+      while(this.optionWords.length > 7) {
+        this.optionWords.pop();
+      }
       this.optionWords = this.mathService.shuffle(Array.from(new Set(this.optionWords)));
     });
 
