@@ -26,6 +26,7 @@ export class QuizWordPage {
   selectedWordTranslation: string;
   optionWords: Array<string> = [];
   solution: Array<string> = [];
+  kanjiOrHiragana: string;
 
   next: boolean = false;
 
@@ -78,7 +79,8 @@ export class QuizWordPage {
       this.optionWords = this.mathService.shuffle(Array.from(new Set(this.optionWords)));
     });
 
-    this.selectedWord.kanji.split('').forEach(c => {this.solution.push(' ')});
+    this.kanjiOrHiragana  = this.selectedWord.kanji ? this.selectedWord.kanji : this.selectedWord.hiragana;
+    this.kanjiOrHiragana.split('').forEach(c => {this.solution.push(' ')});
     this.translate.get('word.'+this.selectedWord.id).subscribe(value => {
       this.selectedWordTranslation = value;
     });
@@ -130,11 +132,11 @@ export class QuizWordPage {
     }
     else {
       this.bad++;
-      this.param_result = {0: this.selectedWord.kanji};
+      this.param_result = {0: this.kanjiOrHiragana};
     }
   }
 
   isValidAnswer(): boolean {
-    return this.solution.join('') == this.selectedWord.kanji;
+    return this.solution.join('') == this.kanjiOrHiragana;
   }
 }
