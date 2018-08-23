@@ -1,12 +1,12 @@
 page-quiz-word {
     .character {
         text-align: center;
-        font-size: 3vh !important;
+        font-size: 4vh !important;
     }
     .box {
-        height: 6vh;
+        height: 8vh;
         border: 1px solid #e6e3e3;
-        width: 5vh;
+        width: 6vh;
         border-radius: 5px;
     }
     .container {
@@ -27,7 +27,7 @@ page-quiz-word {
         margin-left: 2vh;
     }
     .small {
-        font-size: 1.5vh;
+        font-size: 2.5vh;
     }
     .scroll-content {
         margin-top: 10% !important;
@@ -39,6 +39,6 @@ page-quiz-word {
         color: #D04E50;
     }
     .result {
-        font-size: 2vh;
+        font-size: 3vh;
     }
 }

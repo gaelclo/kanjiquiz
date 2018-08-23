@@ -73,7 +73,7 @@ export class QuizWordPage {
     this.selectedWord = this.words[selectedWordIdx];
     [this.words[selectedWordIdx], this.words[optionWordIdx1], this.words[optionWordIdx2], this.words[optionWordIdx3]].forEach(o => {
       this.optionWords = this.optionWords.concat(o.kanji.split(''));
-      while(this.optionWords.length > 7) {
+      while(this.optionWords.length > 6) {
         this.optionWords.pop();
       }
       this.optionWords = this.mathService.shuffle(Array.from(new Set(this.optionWords)));
