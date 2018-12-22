@@ -105,7 +105,7 @@ export class QuizKanjiPage {
   loadAndFormat(id: string): string {
     if(!id) return;
     let str: string;
-    this.translate.get('kanji.'+id).subscribe(v => {str = this.format(v.split(',').join(', '));});
+    this.translate.get('kanji_'+this.jlptLvl+'.'+id).subscribe(v => {str = this.format(v.split(',').join(', '));});
     return str;
   } 
 }

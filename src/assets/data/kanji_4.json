@@ -1,0 +1,364 @@
+{
+    "kanjis": [
+        {
+            "id": 1,
+            "kanji": "不",
+            "kunyomi": "",
+            "onyomi": "ふ,ぶ"
+        },
+        {
+            "id": 2,
+            "kanji": "世",
+            "kunyomi": "よ",
+            "onyomi": "せい,せ"
+        },
+        {
+            "id": 3,
+            "kanji": "主",
+            "kunyomi": "ぬし,おも,あるじ",
+            "onyomi": "しゅ,す"
+        },
+        {
+            "id": 4,
+            "kanji": "事",
+            "kunyomi": "こと",
+            "onyomi": "じ,ず"
+        },
+        {
+            "id": 5,
+            "kanji": "乗",
+            "kunyomi": "の－る",
+            "onyomi": "じょう"
+        },
+        {
+            "id": 6,
+            "kanji": "京",
+            "kunyomi": "みやこ",
+            "onyomi": "きょう,けい,きん"
+        },
+        {
+            "id": 7,
+            "kanji": "仕",
+            "kunyomi": "つか－える",
+            "onyomi": "し"
+        },
+        {
+            "id": 8,
+            "kanji": "代",
+            "kunyomi": "か－わる,よ",
+            "onyomi": "だい,たい"
+        },
+        {
+            "id": 9,
+            "kanji": "以",
+            "kunyomi": "もっ－て",
+            "onyomi": "い"
+        },
+        {
+            "id": 10,
+            "kanji": "低",
+            "kunyomi": "ひく－い",
+            "onyomi": "てい"
+        },
+        {
+            "id": 11,
+            "kanji": "作",
+            "kunyomi": "つく－る",
+            "onyomi": "さく,さ"
+        },
+        {
+            "id": 12,
+            "kanji": "体",
+            "kunyomi": "からだ",
+            "onyomi": "たい,てい"
+        },
+        {
+            "id": 13,
+            "kanji": "住",
+            "kunyomi": "す－む",
+            "onyomi": "じゅう"
+        },
+        {
+            "id": 14,
+            "kanji": "使",
+            "kunyomi": "つか－う",
+            "onyomi": "し"
+        },
+        {
+            "id": 15,
+            "kanji": "便",
+            "kunyomi": "たよ－り",
+            "onyomi": "べん,びん"
+        },
+        {
+            "id": 16,
+            "kanji": "借",
+            "kunyomi": "か－りる",
+            "onyomi": "しゃく"
+        },
+        {
+            "id": 17,
+            "kanji": "働",
+            "kunyomi": "はたら－く",
+            "onyomi": "どう"
+        },
+        {
+            "id": 18,
+            "kanji": "元",
+            "kunyomi": "もと",
+            "onyomi": "げん,がん"
+        },
+        {
+            "id": 19,
+            "kanji": "兄",
+            "kunyomi": "あに,え",
+            "onyomi": "けい,きょう"
+        },
+        {
+            "id": 20,
+            "kanji": "光",
+            "kunyomi": "ひかり,ひか－る",
+            "onyomi": "こう"
+        },
+        {
+            "id": 21,
+            "kanji": "写",
+            "kunyomi": "うつ－す",
+            "onyomi": "しゃ"
+        },
+        {
+            "id": 22,
+            "kanji": "冬",
+            "kunyomi": "ふゆ",
+            "onyomi": "とう"
+        },
+        {
+            "id": 23,
+            "kanji": "切",
+            "kunyomi": "きーる",
+            "onyomi": "せつ,さい"
+        },
+        {
+            "id": 24,
+            "kanji": "別",
+            "kunyomi": "わか－れる",
+            "onyomi": "べつ"
+        },
+        {
+            "id": 25,
+            "kanji": "力",
+            "kunyomi": "ちから",
+            "onyomi": "りき,りょく"
+        },
+        {
+            "id": 26,
+            "kanji": "勉",
+            "kunyomi": "つと－める",
+            "onyomi": "べん"
+        },
+        {
+            "id": 27,
+            "kanji": "動",
+            "kunyomi": "うご－く,うご－かす",
+            "onyomi": "どう"
+        },
+        {
+            "id": 28,
+            "kanji": "区",
+            "kunyomi": "",
+            "onyomi": "く"
+        },
+        {
+            "id": 29,
+            "kanji": "医",
+            "kunyomi": "",
+            "onyomi": "い"
+        },
+        {
+            "id": 30,
+            "kanji": "去",
+            "kunyomi": "さ－る",
+            "onyomi": "きょ,こ"
+        },
+        {
+            "id": 31,
+            "kanji": "合",
+            "kunyomi": "ごう,かっ",
+            "onyomi": "あ－う,あ－わす,あ－わせる"
+        },
+        {
+            "id": 32,
+            "kanji": "台",
+            "kunyomi": "だい,たい",
+            "onyomi": "うてな"
+        },
+        {
+            "id": 33,
+            "kanji": "同",
+            "kunyomi": "おな－じ",
+            "onyomi": "どう"
+        },
+        {
+            "id": 34,
+            "kanji": "味",
+            "kunyomi": "あじ,あじ－わう",
+            "onyomi": "み"
+        },
+        {
+            "id": 35,
+            "kanji": "品",
+            "kunyomi": "しな",
+            "onyomi": "ひん,ほん"
+        },
+        {
+            "id": 36,
+            "kanji": "員",
+            "kunyomi": "",
+            "onyomi": "いん"
+        },
+        {
+            "id": 37,
+            "kanji": "問",
+            "kunyomi": "と－う,とん",
+            "onyomi": "もん"
+        },
+        {
+            "id": 38,
+            "kanji": "図",
+            "kunyomi": "はか－る",
+            "onyomi": "ず,と"
+        },
+        {
+            "id": 39,
+            "kanji": "地",
+            "kunyomi": "つち",
+            "onyomi": "ち,じ"
+        },
+        {
+            "id": 40,
+            "kanji": "堂",
+            "kunyomi": "",
+            "onyomi": "どう"
+        },
+        {
+            "id": 41,
+            "kanji": "場",
+            "kunyomi": "ば",
+            "onyomi": "じょう"
+        },
+        {
+            "id": 42,
+            "kanji": "声",
+            "kunyomi": "こえ,こわ",
+            "onyomi": "せい,しょう"
+        },
+        {
+            "id": 43,
+            "kanji": "売",
+            "kunyomi": "う－る",
+            "onyomi": "ばい"
+        },
+        {
+            "id": 44,
+            "kanji": "夏",
+            "kunyomi": "なつ",
+            "onyomi": "か,げ"
+        },
+        {
+            "id": 45,
+            "kanji": "夕",
+            "kunyomi": "ゆう,ゆうべ",
+            "onyomi": "せき"
+        },
+        {
+            "id": 46,
+            "kanji": "夜",
+            "kunyomi": "よる",
+            "onyomi": "や"
+        },
+        {
+            "id": 47,
+            "kanji": "太",
+            "kunyomi": "ふと－い,はなは－だ",
+            "onyomi": "た,たい"
+        },
+        {
+            "id": 48,
+            "kanji": "好",
+            "kunyomi": "す－く,この－む",
+            "onyomi": "こう"
+        },
+        {
+            "id": 49,
+            "kanji": "妹",
+            "kunyomi": "いもうと,いも",
+            "onyomi": "まい"
+        },
+        {
+            "id": 50,
+            "kanji": "姉",
+            "kunyomi": "あね",
+            "onyomi": "し"
+        },
+        {
+            "id": 51,
+            "kanji": "始",
+            "kunyomi": "はじ－める,はじ－まる",
+            "onyomi": "し"
+        },
+        {
+            "id": 52,
+            "kanji": "字",
+            "kunyomi": "あざ,あざな",
+            "onyomi": "じ"
+        },
+        {
+            "id": 53,
+            "kanji": "室",
+            "kunyomi": "むろ",
+            "onyomi": "しつ"
+        },
+        {
+            "id": 54,
+            "kanji": "家",
+            "kunyomi": "いえ,や",
+            "onyomi": "か,け"
+        },
+        {
+            "id": 55,
+            "kanji": "寒",
+            "kunyomi": "さむ－い",
+            "onyomi": "かん"
+        },
+        {
+            "id": 56,
+            "kanji": "屋",
+            "kunyomi": "や",
+            "onyomi": "おく"
+        },
+        {
+            "id": 57,
+            "kanji": "工",
+            "kunyomi": "たくみ",
+            "onyomi": "こう,く"
+        },
+        {
+            "id": 58,
+            "kanji": "市",
+            "kunyomi": "いち",
+            "onyomi": "し"
+        },
+        {
+            "id": 59,
+            "kanji": "帰",
+            "kunyomi": "かえ－る,かえ－す",
+            "onyomi": "き"
+        },
+        {
+            "id": 60,
+            "kanji": "広",
+            "kunyomi": "ひろ－い,ひろ－める,ひろ－まる",
+            "onyomi": "こう"
+        }
+    ]
+}
