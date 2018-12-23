@@ -6,8 +6,9 @@
     },
     "selection": {
         "title": "Mode",
-        "kanjis": "Kanjis",
-        "words": "Mots"
+        "kanjis": "Kanji",
+        "words": "Mot",
+        "kanas": "Kana"
     },
     "parameter": {
         "title": "Paramètres",
@@ -16,7 +17,7 @@
         "jlptn3": "JLPT N3",
         "jlptn2": "JLPT N2",
         "jlptn1": "JLPT N1",
-        "numberKanji": "Nombre de Kanjis",
+        "number": "Quantité",
         "alert": {
             "title": "Paramètre incorrect.",
             "content": "Le nombre doit être entre 1 et 100.",
@@ -24,7 +25,9 @@
         },
         "startQuiz": "Commencez Quiz",
         "all": "Tous",
-        "category": "Catégories"
+        "category": "Catégories",
+        "katakana": "Katakana",
+        "hiragana": "Hirugana"
     },
     "quiz": {
         "title": "Quiz",

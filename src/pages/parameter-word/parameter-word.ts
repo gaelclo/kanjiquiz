@@ -1,5 +1,5 @@
-import { Component, QueryList, ViewChildren } from '@angular/core';
-import { IonicPage, NavController, NavParams, Checkbox } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { TranslateService } from '@ngx-translate/core';
 import { QuizWordPage } from '../quiz-word/quiz-word';
@@ -10,8 +10,6 @@ import { QuizWordPage } from '../quiz-word/quiz-word';
   templateUrl: 'parameter-word.html',
 })
 export class ParameterWordPage {
-
-  @ViewChildren("categories") categoriesView: QueryList<Checkbox>;
 
   total: number = 1;
   categories: Array<any>;

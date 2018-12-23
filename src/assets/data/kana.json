@@ -1,0 +1,469 @@
+{
+    "katakana": [
+            {
+                "id": 1,
+                "kana": "ア",
+                "hepburn" : "a"
+            },
+            {
+                "id": 2,
+                "kana": "イ",
+                "hepburn" : "i"
+            },        
+            {
+                "id": 3,
+                "kana": "ウ",
+                "hepburn" : "u"
+            },        
+            {
+                "id": 4,
+                "kana": "エ",
+                "hepburn" : "e"
+            },        
+            {
+                "id": 5,
+                "kana": "オ",
+                "hepburn" : "o"
+            },
+            {
+                "id": 6,
+                "kana": "カ",
+                "hepburn" : "ka"
+            },
+            {
+                "id": 7,
+                "kana": "キ",
+                "hepburn" : "ki"
+            },        
+            {
+                "id": 8,
+                "kana": "ク",
+                "hepburn" : "ku"
+            },        
+            {
+                "id": 9,
+                "kana": "ケ",
+                "hepburn" : "ke"
+            },        
+            {
+                "id": 10,
+                "kana": "コ",
+                "hepburn" : "ko"
+            },
+            {
+                "id": 11,
+                "kana": "サ",
+                "hepburn" : "sa"
+            },
+            {
+                "id": 12,
+                "kana": "シ",
+                "hepburn" : "shi"
+            },        
+            {
+                "id": 13,
+                "kana": "ス",
+                "hepburn" : "su"
+            },        
+            {
+                "id": 14,
+                "kana": "セ",
+                "hepburn" : "se"
+            },        
+            {
+                "id": 15,
+                "kana": "ソ",
+                "hepburn" : "so"
+            },
+            {
+                "id": 16,
+                "kana": "タ",
+                "hepburn" : "ta"
+            },
+            {
+                "id": 17,
+                "kana": "チ",
+                "hepburn" : "chi"
+            },        
+            {
+                "id": 18,
+                "kana": "ツ",
+                "hepburn" : "tsu"
+            },        
+            {
+                "id": 19,
+                "kana": "テ",
+                "hepburn" : "te"
+            },        
+            {
+                "id": 20,
+                "kana": "ト",
+                "hepburn" : "to"
+            },
+            {
+                "id": 21,
+                "kana": "ナ",
+                "hepburn" : "na"
+            },
+            {
+                "id": 22,
+                "kana": "ニ",
+                "hepburn" : "ni"
+            },        
+            {
+                "id": 23,
+                "kana": "ヌ",
+                "hepburn" : "nu"
+            },        
+            {
+                "id": 24,
+                "kana": "ネ",
+                "hepburn" : "ne"
+            },        
+            {
+                "id": 25,
+                "kana": "ノ",
+                "hepburn" : "no"
+            },
+            {
+                "id": 26,
+                "kana": "ハ",
+                "hepburn" : "ha"
+            },
+            {
+                "id": 27,
+                "kana": "ヒ",
+                "hepburn" : "hi"
+            },        
+            {
+                "id": 28,
+                "kana": "フ",
+                "hepburn" : "fu"
+            },        
+            {
+                "id": 29,
+                "kana": "ヘ",
+                "hepburn" : "he"
+            },        
+            {
+                "id": 30,
+                "kana": "ホ",
+                "hepburn" : "ho"
+            },
+            {
+                "id": 31,
+                "kana": "マ",
+                "hepburn" : "ma"
+            },
+            {
+                "id": 32,
+                "kana": "ミ",
+                "hepburn" : "mi"
+            },        
+            {
+                "id": 33,
+                "kana": "ム",
+                "hepburn" : "mu"
+            },        
+            {
+                "id": 34,
+                "kana": "メ",
+                "hepburn" : "me"
+            },        
+            {
+                "id": 35,
+                "kana": "モ",
+                "hepburn" : "mo"
+            },        
+            {
+                "id": 36,
+                "kana": "ヤ",
+                "hepburn" : "ya"
+            },        
+            {
+                "id": 37,
+                "kana": "ユ",
+                "hepburn" : "yu"
+            },        
+            {
+                "id": 38,
+                "kana": "ヨ",
+                "hepburn" : "yo"
+            },        
+            {
+                "id": 39,
+                "kana": "ラ",
+                "hepburn" : "ra"
+            },        
+            {
+                "id": 40,
+                "kana": "リ",
+                "hepburn" : "ri"
+            },        
+            {
+                "id": 41,
+                "kana": "ル",
+                "hepburn" : "ru"
+            },        
+            {
+                "id": 42,
+                "kana": "レ",
+                "hepburn" : "re"
+            },        
+            {
+                "id": 43,
+                "kana": "ロ",
+                "hepburn" : "ro"
+            }
+            ,        
+            {
+                "id": 44,
+                "kana": "ワ",
+                "hepburn" : "wa"
+            },        
+            {
+                "id": 45,
+                "kana": "ヲ",
+                "hepburn" : "wo"
+            },        
+            {
+                "id": 46,
+                "kana": "ン",
+                "hepburn" : "n"
+            }
+        ],
+    "hiragana": [
+        {
+            "id": 1,
+            "kana": "あ",
+            "hepburn" : "a"
+        },
+        {
+            "id": 2,
+            "kana": "い",
+            "hepburn" : "i"
+        },        
+        {
+            "id": 3,
+            "kana": "う",
+            "hepburn" : "u"
+        },        
+        {
+            "id": 4,
+            "kana": "え",
+            "hepburn" : "e"
+        },        
+        {
+            "id": 5,
+            "kana": "お",
+            "hepburn" : "o"
+        },
+        {
+            "id": 6,
+            "kana": "か",
+            "hepburn" : "ka"
+        },
+        {
+            "id": 7,
+            "kana": "き",
+            "hepburn" : "ki"
+        },        
+        {
+            "id": 8,
+            "kana": "く",
+            "hepburn" : "ku"
+        },        
+        {
+            "id": 9,
+            "kana": "け",
+            "hepburn" : "ke"
+        },        
+        {
+            "id": 10,
+            "kana": "こ",
+            "hepburn" : "ko"
+        },
+        {
+            "id": 11,
+            "kana": "さ",
+            "hepburn" : "sa"
+        },
+        {
+            "id": 12,
+            "kana": "し",
+            "hepburn" : "shi"
+        },        
+        {
+            "id": 13,
+            "kana": "す",
+            "hepburn" : "su"
+        },        
+        {
+            "id": 14,
+            "kana": "せ",
+            "hepburn" : "se"
+        },        
+        {
+            "id": 15,
+            "kana": "そ",
+            "hepburn" : "so"
+        },
+        {
+            "id": 16,
+            "kana": "た",
+            "hepburn" : "ta"
+        },
+        {
+            "id": 17,
+            "kana": "ち",
+            "hepburn" : "chi"
+        },        
+        {
+            "id": 18,
+            "kana": "つ",
+            "hepburn" : "tsu"
+        },        
+        {
+            "id": 19,
+            "kana": "て",
+            "hepburn" : "te"
+        },        
+        {
+            "id": 20,
+            "kana": "と",
+            "hepburn" : "to"
+        },
+        {
+            "id": 21,
+            "kana": "な",
+            "hepburn" : "na"
+        },
+        {
+            "id": 22,
+            "kana": "に",
+            "hepburn" : "ni"
+        },        
+        {
+            "id": 23,
+            "kana": "ぬ",
+            "hepburn" : "nu"
+        },        
+        {
+            "id": 24,
+            "kana": "ね",
+            "hepburn" : "ne"
+        },        
+        {
+            "id": 25,
+            "kana": "の",
+            "hepburn" : "no"
+        },
+        {
+            "id": 26,
+            "kana": "は",
+            "hepburn" : "ha"
+        },
+        {
+            "id": 27,
+            "kana": "ひ",
+            "hepburn" : "hi"
+        },        
+        {
+            "id": 28,
+            "kana": "ふ",
+            "hepburn" : "fu"
+        },        
+        {
+            "id": 29,
+            "kana": "へ",
+            "hepburn" : "he"
+        },        
+        {
+            "id": 30,
+            "kana": "ほ",
+            "hepburn" : "ho"
+        },
+        {
+            "id": 31,
+            "kana": "ま",
+            "hepburn" : "ma"
+        },
+        {
+            "id": 32,
+            "kana": "み",
+            "hepburn" : "mi"
+        },        
+        {
+            "id": 33,
+            "kana": "む",
+            "hepburn" : "mu"
+        },        
+        {
+            "id": 34,
+            "kana": "め",
+            "hepburn" : "me"
+        },        
+        {
+            "id": 35,
+            "kana": "も",
+            "hepburn" : "mo"
+        },
+        {
+            "id": 36,
+            "kana": "や",
+            "hepburn" : "ya"
+        },
+        {
+            "id": 37,
+            "kana": "ゆ",
+            "hepburn" : "yu"
+        },        
+        {
+            "id": 38,
+            "kana": "よ",
+            "hepburn" : "yo"
+        },      
+        
+        {
+            "id": 39,
+            "kana": "ラ",
+            "hepburn" : "ra"
+        },
+        {
+            "id": 40,
+            "kana": "り",
+            "hepburn" : "ri"
+        },        
+        {
+            "id": 41,
+            "kana": "る",
+            "hepburn" : "ru"
+        },        
+        {
+            "id": 42,
+            "kana": "れ",
+            "hepburn" : "re"
+        },        
+        {
+            "id": 43,
+            "kana": "ろ",
+            "hepburn" : "ro"
+        },
+
+        {
+            "id": 44,
+            "kana": "わ",
+            "hepburn" : "wa"
+        },        
+        {
+            "id": 45,
+            "kana": "を",
+            "hepburn" : "wo"
+        },        
+        {
+            "id": 46,
+            "kana": "ん",
+            "hepburn" : "n"
+        }
+    ]
+}

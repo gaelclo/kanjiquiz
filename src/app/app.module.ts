@@ -13,8 +13,10 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { QuizKanjiPage } from '../pages/quiz-kanji/quiz-kanji';
 import { QuizWordPage } from '../pages/quiz-word/quiz-word';
+import { QuizKanaPage } from '../pages/quiz-kana/quiz-kana';
 import { ParameterKanjiPage } from '../pages/parameter-kanji/parameter-kanji';
 import { ParameterWordPage } from '../pages/parameter-word/parameter-word';
+import { ParameterKanaPage } from '../pages/parameter-kana/parameter-kana';
 import { ResumePage } from '../pages/resume/resume';
 import { SelectionPage } from '../pages/selection/selection';
 
@@ -33,8 +35,10 @@ export function createTranslateLoader(http: HttpClient) {
     HomePage,
     QuizKanjiPage,
     QuizWordPage,
+    QuizKanaPage,
     ParameterKanjiPage,
     ParameterWordPage,
+    ParameterKanaPage,
     ResumePage,
     SelectionPage,
     KanjiInputComponent
@@ -58,8 +62,10 @@ export function createTranslateLoader(http: HttpClient) {
     HomePage,
     QuizKanjiPage,
     QuizWordPage,
+    QuizKanaPage,
     ParameterKanjiPage,
     ParameterWordPage,
+    ParameterKanaPage,
     ResumePage,
     SelectionPage,
     KanjiInputComponent

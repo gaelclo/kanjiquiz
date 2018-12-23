@@ -32,7 +32,7 @@ export class QuizKanjiPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public elementRef: ElementRef, 
     private renderer: Renderer2, public translate: TranslateService, public mathService: KanjizMathProvider) {
   
-    this.total = navParams.get('numberKanji');
+    this.total = navParams.get('number');
     this.jlptLvl = navParams.get('jlptLvl');
 
     this.load(this.jlptLvl);

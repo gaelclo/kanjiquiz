@@ -12,4 +12,10 @@ page-selection {
     .card:nth-child(2) .card-content {
         background-color: #78caa8;
     }
+    .card:nth-child(3) .card-content {
+        background-color: #f8abab;
+    }
+    .centered { 
+        font-size: 5vh;
+    }
 }

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'quiz.title' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding *ngIf="selectedKana && optionKanas">
+  <div class="counter">{{current}}/{{total}}</div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col12 class="kana">{{selectedKana.kana}}</ion-col>
+    </ion-row>
+
+    <ion-row class="bottom">
+      <ion-col col12>
+        <div class="container">
+          <div *ngFor="let s of optionKanas" #options class="box multiple centered-parent" (click)="validate(s.id)" data-id="{{s.id}}"><div class="character centered">{{s.hepburn}}</div></div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  
+  <div class="bottom-btn-when-footer">
+    <ion-col col-12><button ion-button block (click)="goNext()" *ngIf="next">{{this.current == this.total ? ('quiz.finish' | translate) : ('quiz.next' | translate)}}</button></ion-col>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-segment>
+      <div class='good-answer answer'>{{good}}</div>
+      <div class='bad-answer answer'>{{bad}}</div>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>

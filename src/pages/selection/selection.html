@@ -5,15 +5,21 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-card (click)="selectKana()">
+    <ion-card-content>
+      <div class="centered-parent"><div class="centered white">{{ 'selection.kanas' | translate }}</div></div>
+    </ion-card-content>
+  </ion-card>
+
   <ion-card (click)="selectKanji()">
     <ion-card-content>
       <div class="centered-parent"><div class="centered white">{{ 'selection.kanjis' | translate }}</div></div>
     </ion-card-content>
   </ion-card>
   
-    <ion-card (click)="selectWord()">
-      <ion-card-content>
-        <div class="centered-parent"><div class="centered white">{{ 'selection.words' | translate }}</div></div>
-      </ion-card-content>
-    </ion-card>
+  <ion-card (click)="selectWord()">
+    <ion-card-content>
+      <div class="centered-parent"><div class="centered white">{{ 'selection.words' | translate }}</div></div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

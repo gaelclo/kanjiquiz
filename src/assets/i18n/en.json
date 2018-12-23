@@ -2,12 +2,13 @@
     "home": {
         "title": "Kanji Quiz",
         "start": "Start",
-        "welcome": "Welcome to Kanji quiz ! An easy way to learn Kanjis and the most important word of the japanese language."
+        "welcome": "Welcome to Kanji quiz ! An easy way to learn Kanji and Kana."
     },
     "selection": {
         "title": "Mode",
-        "kanjis": "Kanjis",
-        "words": "Words"
+        "kanjis": "Kanji",
+        "words": "Word",
+        "kanas": "Kana"
     },
     "parameter": {
         "title": "Parameters",
@@ -16,7 +17,7 @@
         "jlptn3": "JLPT N3",
         "jlptn2": "JLPT N2",
         "jlptn1": "JLPT N1",
-        "numberKanji": "Number Of kanji",
+        "number": "Quantity",
         "alert": {
             "title": "Wrong parameter",
             "content": "Number must be between 1 and 100.",
@@ -24,7 +25,9 @@
         },
         "startQuiz": "Start Quiz",
         "all": "All",
-        "category": "Categories"
+        "category": "Categories",
+        "katakana": "Katakana",
+        "hiragana": "Hiragana"
     },
     "quiz": {
         "title": "Quiz",
